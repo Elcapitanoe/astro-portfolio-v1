@@ -1,4 +1,4 @@
-name = "astro-portfolio-v1"
+name = "portfolio"
 compatibility_date = "2024-05-06"
 
 assets = { directory = "./dist" }
