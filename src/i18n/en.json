@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Domi Adiwijaya — Portfolio",
-    "description": "Explore Domi Adiwijaya's portfolio, tech insights, and innovative projects by a professional Tech & HomeLab Enthusiast."
+    "title": "Domi Adiwijaya",
+    "description": "Explore the portfolio, technical insights, and innovative projects of Domi Adiwijaya, a professional Tech & Homelab Enthusiast."
   },
   "nav": {
     "home": "Home",
@@ -18,8 +18,8 @@
       "2": "Adiwijaya"
     },
     "tagline": "Systems & Homelab Engineer",
-    "blurb": "I deliver dependable systems. From homelab architectures to production-grade automation, I translate complex constraints into elegant, resilient solutions.",
-    "cta": "Explore my work"
+    "blurb": "I design and deliver dependable systems. From homelab architectures to production-grade automation, I translate complex constraints into solutions that are both elegant and resilient.",
+    "cta": "Explore My Work"
   },
   "about": {
     "h2": {
@@ -28,11 +28,11 @@
     },
     "lead": "I’m driven to make technology meaningfully better, whether in a controlled homelab or by helping others resolve complex, real-world challenges.",
     "p1": "I’m Domi. A lifelong technologist, I’ve turned early curiosity into a disciplined practice of designing systems that solve consequential, real-world problems.",
-    "p2": "My homelab operates as a focused R&D environment: I stress-test, break, and harden ideas, then productionize what proves robust.",
-    "p3": "Beyond configuration and automation work, I codify and share what I learn so others can navigate complexity faster. That moment when everything clicks and just works is the target.",
+    "p2": "My homelab serves as a focused R&D environment: I stress-test, intentionally break, and harden ideas, then productionize what proves robust.",
+    "p3": "Beyond configuration and automation, I codify and share what I learn so others can navigate complexity faster. The moment when everything clicks and simply works is the goal.",
     "nutshell": "In a Nutshell",
     "bullets": {
-      "1": "Homelab R&D and pragmatic problem-solver",
+      "1": "Homelab R&D, pragmatic problem-solver",
       "2": "Automation-first practitioner",
       "3": "Open-source contributor",
       "4": "Perpetual learner, curious by default"
@@ -40,19 +40,19 @@
     "highlights": {
       "innovation": {
         "title": "Tech Innovation",
-        "description": "I interrogate emerging technologies and architect elegant, scalable solutions to consequential problems."
+        "description": "I evaluate emerging technologies and architect elegant, scalable solutions to consequential problems."
       },
       "homelab": {
         "title": "Homelab R&D",
-        "description": "A controlled environment where I stress-test, harden, and productionize ideas before they face real traffic."
+        "description": "A controlled environment where I stress-test, harden, and productionize ideas before they encounter real traffic."
       },
       "automation": {
         "title": "Automation-First",
-        "description": "Anything I repeat twice becomes a candidate for reliable, idempotent automation."
+        "description": "Anything repeated twice becomes a candidate for reliable, idempotent automation."
       },
       "sharing": {
         "title": "Knowledge Sharing",
-        "description": "I codify lessons into docs, demos, and talks, teaching to compound learning across teams."
+        "description": "I distill lessons into docs, demos, and talks to accelerate learning across teams."
       }
     }
   },
@@ -61,7 +61,7 @@
       "1": "What I Work",
       "2": "With"
     },
-    "lead": "The toolchain I rely on to design, automate, and operate systems that are elegant under load and predictable in failure.",
+    "lead": "The toolchain I rely on to design, automate, and operate systems that remain elegant under load and predictable in failure.",
     "categories": {
       "infrastructure": {
         "title": "Infrastructure & Cloud",
@@ -96,7 +96,7 @@
     },
     "tail": {
       "title": "Never Stop Learning",
-      "body": "Technology evolves daily. I run continuous experiments to pressure-test new tools, refine my practice, and deliver measurably better outcomes."
+      "body": "Technology evolves daily. I run continuous experiments to stress-test new tools, refine my practice, and deliver measurably better outcomes."
     }
   },
   "services": {
@@ -104,10 +104,10 @@
       "1": "How I Can",
       "2": "Help"
     },
-    "lead": "From full-stack infrastructure to that one stubborn task you want off your plate, I deliver pragmatic, durable solutions.",
+    "lead": "From end-to-end infrastructure to that one stubborn task you want off your plate, I deliver pragmatic, durable solutions.",
     "cards": {
       "homelab": {
-        "title": "HomeLab Setup",
+        "title": "Homelab Setup",
         "description": "Design and deploy a purpose-built homelab for learning, staging, or self-hosting, grounded in resilient networking, virtualization, and storage.",
         "features": {
           "1": "Hardware recommendations",
@@ -140,7 +140,7 @@
         }
       },
       "automation": {
-        "title": "Automation Magic",
+        "title": "Reliable Automation",
         "description": "Eliminate toil with robust, idempotent automation so you can focus on outcomes that matter.",
         "features": {
           "1": "Custom scripts",
@@ -175,7 +175,7 @@
     },
     "tail": {
       "title": "Need Something Different?",
-      "body": "Contexts vary and templates rarely fit. Tell me what you need, and we’ll design a solution that aligns with your goals, constraints, and timelines.",
+      "body": "Contexts vary and templates rarely fit. Tell me what you need, and we will design a solution that aligns with your goals, constraints, and timelines.",
       "cta": "Let’s talk"
     }
   },
