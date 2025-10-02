@@ -1,6 +1,7 @@
 export const SUPPORTED_LOCALES = [
   { code: 'en', name: 'English' },
   { code: 'id', name: 'Bahasa Indonesia' }
+  { code: 'jav', name: 'Bahasa Jawa' }
 ] as const;
 
 export type Locale = (typeof SUPPORTED_LOCALES)[number]['code'];
