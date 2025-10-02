@@ -1,15 +1,22 @@
 ---
+import type { Locale } from '../lib/locales';
+
 export interface Props {
   title: string;
   description?: string;
+  lang: Locale;
 }
 
-const { title, description = "Explore Domi Adiwijaya's portfolio, tech insights, and innovative projects by a professional Tech & HomeLab Enthusiast." } = Astro.props;
+const {
+  title,
+  description = "Explore Domi Adiwijaya's portfolio, tech insights, and innovative projects by a professional Tech & HomeLab Enthusiast.",
+  lang,
+} = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -17,7 +24,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="icon" href="https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo-circle.png" />
     <meta name="generator" content={Astro.generator} />
     <meta name="author" content="Domi Adiwijaya" />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
@@ -30,14 +37,18 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="twitter:url" content={canonicalURL} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content="https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo.png" />
+    <meta
+      property="twitter:image"
+      content="https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo.png"
+    />
     <meta name="twitter:creator" content="@domiadiwijaya" />
 
-<script defer src="https://unpkg.com/flowbite@2.5.1/dist/flowbite.min.js" is:inline></script>
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" is:inline></script>
-<script defer data-domain="domiadi.com" src="https://plausible.io/js/script.js" is:inline></script>
+    <script defer src="https://unpkg.com/flowbite@2.5.1/dist/flowbite.min.js" is:inline></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" is:inline></script>
+    <script defer data-domain="domiadi.com" src="https://plausible.io/js/script.js" is:inline></script>
 
     <link rel="canonical" href={canonicalURL} />
+    <slot name="head" />
     <title>{title}</title>
   </head>
   <body class="min-h-screen bg-slate-900 text-white">

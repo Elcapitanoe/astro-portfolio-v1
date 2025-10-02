@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Domi Adiwijaya — Portofolio",
+    "description": "Jelajahi portofolio, wawasan teknologi, dan proyek inovatif Domi Adiwijaya, seorang Tech & HomeLab Enthusiast profesional."
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "skills": "Keahlian",
+    "services": "Layanan",
+    "contact": "Kontak",
+    "openMenu": "Buka menu navigasi"
+  },
+  "hero": {
+    "alt": "Domi Adiwijaya",
+    "title": {
+      "1": "Domi",
+      "2": "Adiwijaya"
+    },
+    "tagline": "Engineer Sistem & Homelab",
+    "blurb": "Saya menghadirkan sistem yang andal. Dari arsitektur homelab hingga otomasi kelas produksi, saya menerjemahkan batasan kompleks menjadi solusi elegan dan tangguh.",
+    "cta": "Lihat karyaku"
+  },
+  "about": {
+    "h2": {
+      "1": "Tentang",
+      "2": "Saya"
+    },
+    "lead": "Saya terdorong untuk membuat teknologi jauh lebih bermanfaat, baik di homelab terkontrol maupun saat membantu orang lain menuntaskan tantangan nyata.",
+    "p1": "Saya Domi. Seorang teknolog seumur hidup yang mengubah rasa ingin tahu sejak dini menjadi praktik disiplin merancang sistem untuk menyelesaikan masalah nyata.",
+    "p2": "Homelab saya berfungsi sebagai lingkungan R&D terfokus: saya uji tekan, bongkar, dan perkuat ide, lalu produksi apa pun yang terbukti kokoh.",
+    "p3": "Selain konfigurasi dan otomasi, saya mendokumentasikan dan membagikan apa yang saya pelajari agar orang lain bisa menavigasi kompleksitas lebih cepat. Momen ketika semuanya klik dan berjalan mulus adalah tujuan utamanya.",
+    "nutshell": "Singkatnya",
+    "bullets": {
+      "1": "R&D homelab dan pemecah masalah pragmatis",
+      "2": "Praktisi yang mengutamakan otomasi",
+      "3": "Kontributor open-source",
+      "4": "Pembelajar tanpa henti, selalu ingin tahu"
+    },
+    "highlights": {
+      "innovation": {
+        "title": "Inovasi Teknologi",
+        "description": "Saya mengevaluasi teknologi baru dan merancang solusi elegan serta skalabel untuk masalah besar."
+      },
+      "homelab": {
+        "title": "R&D Homelab",
+        "description": "Lingkungan terkontrol tempat saya menguji, menguatkan, dan memproduksi ide sebelum digunakan sungguhan."
+      },
+      "automation": {
+        "title": "Otomasi Dulu",
+        "description": "Setiap tugas yang saya ulang dua kali langsung masuk kandidat otomasi yang andal dan idempoten."
+      },
+      "sharing": {
+        "title": "Berbagi Pengetahuan",
+        "description": "Saya mendistilasi pelajaran menjadi dokumentasi, demo, dan sesi berbagi untuk mempercepat pembelajaran tim."
+      }
+    }
+  },
+  "skills": {
+    "h2": {
+      "1": "Perangkat yang Saya",
+      "2": "Gunakan"
+    },
+    "lead": "Rangkaian alat yang saya andalkan untuk merancang, mengotomasi, dan mengoperasikan sistem yang elegan saat sibuk dan tetap terprediksi ketika gagal.",
+    "categories": {
+      "infrastructure": {
+        "title": "Infrastruktur & Cloud",
+        "items": {
+          "virtualization": "Virtualisasi",
+          "containerOrchestration": "Orkestrasi Kontainer",
+          "cloudPlatforms": "Platform Cloud",
+          "networkDesign": "Desain Jaringan",
+          "infrastructureAsCode": "Infrastruktur sebagai Kode"
+        }
+      },
+      "systemAdministration": {
+        "title": "Administrasi Sistem",
+        "items": {
+          "linuxAdministration": "Administrasi Linux",
+          "automationScripts": "Skrip Otomasi",
+          "storageSolutions": "Solusi Penyimpanan",
+          "monitoringLogging": "Pemantauan & Logging",
+          "backupRecovery": "Backup & Pemulihan"
+        }
+      },
+      "security": {
+        "title": "Keamanan & Jaringan",
+        "items": {
+          "networkSecurity": "Keamanan Jaringan",
+          "firewallManagement": "Manajemen Firewall",
+          "vpnSetup": "Penyiapan VPN",
+          "accessControl": "Kontrol Akses",
+          "sslTlsConfiguration": "Konfigurasi SSL/TLS"
+        }
+      }
+    },
+    "tail": {
+      "title": "Terus Belajar",
+      "body": "Teknologi berubah setiap hari. Saya terus bereksperimen untuk menguji alat baru, menyempurnakan praktik, dan menghadirkan hasil yang terukur lebih baik."
+    }
+  },
+  "services": {
+    "h2": {
+      "1": "Bagaimana Saya Bisa",
+      "2": "Membantu"
+    },
+    "lead": "Dari infrastruktur penuh hingga tugas membandel yang ingin kamu delegasikan, saya menghadirkan solusi yang pragmatis dan tahan lama.",
+    "cards": {
+      "homelab": {
+        "title": "Pembangunan HomeLab",
+        "description": "Rancang dan bangun homelab khusus untuk belajar, staging, atau self-hosting dengan jaringan, virtualisasi, dan penyimpanan yang tangguh.",
+        "features": {
+          "1": "Rekomendasi hardware",
+          "2": "Topologi jaringan",
+          "3": "Penyiapan virtualisasi",
+          "4": "Arsitektur penyimpanan",
+          "5": "Daya & resiliensi"
+        }
+      },
+      "cloud": {
+        "title": "Migrasi Cloud",
+        "description": "Minimalkan risiko migrasi ke cloud dengan rencana yang pragmatis, hemat biaya, dan arsitektur target yang tepat guna.",
+        "features": {
+          "1": "Strategi migrasi",
+          "2": "Optimasi biaya",
+          "3": "Tuning performa",
+          "4": "Desain arsitektur",
+          "5": "Penyiapan kepatuhan"
+        }
+      },
+      "security": {
+        "title": "Penataan Keamanan",
+        "description": "Bangun kontrol keamanan yang pragmatis untuk menurunkan risiko secara nyata tanpa memperlambat delivery.",
+        "features": {
+          "1": "Keamanan jaringan",
+          "2": "Kontrol akses",
+          "3": "Penyiapan firewall",
+          "4": "Audit keamanan",
+          "5": "Pemindaian kerentanan"
+        }
+      },
+      "automation": {
+        "title": "Otomasi Andal",
+        "description": "Hapus pekerjaan repetitif dengan otomasi idempoten yang kuat sehingga kamu bisa fokus pada hasil yang penting.",
+        "features": {
+          "1": "Skrip kustom",
+          "2": "Otomasi proses",
+          "3": "Pipeline CI/CD",
+          "4": "Infrastruktur sebagai kode",
+          "5": "Optimasi workflow"
+        }
+      },
+      "monitoring": {
+        "title": "Monitoring & Alert",
+        "description": "Dapatkan visibilitas dan sinyal dini yang bisa ditindak sebelum pengguna merasakan dampaknya.",
+        "features": {
+          "1": "Pemantauan sistem",
+          "2": "Alert cerdas",
+          "3": "Dasbor performa",
+          "4": "Pemeriksaan kesehatan",
+          "5": "Agregasi log"
+        }
+      },
+      "data": {
+        "title": "Data & Backup",
+        "description": "Lindungi data penting dengan backup tangguh, pemulihan cepat, dan manajemen siklus hidup yang disiplin.",
+        "features": {
+          "1": "Strategi backup",
+          "2": "Disaster recovery",
+          "3": "Migrasi data",
+          "4": "Optimasi penyimpanan",
+          "5": "Arsip data"
+        }
+      }
+    },
+    "tail": {
+      "title": "Butuh Yang Berbeda?",
+      "body": "Setiap konteks unik dan template jarang pas. Ceritakan kebutuhanmu, kita akan merancang solusi yang sejalan dengan tujuan, kendala, dan jadwalmu.",
+      "cta": "Ayo diskusi"
+    }
+  },
+  "contact": {
+    "h2": {
+      "1": "Hubungi",
+      "2": "Saya"
+    },
+    "lead": "Punya inisiatif yang ingin dipetakan atau masalah yang perlu diurai? Hubungi saya, saya siap memahami tujuanmu dan menyiapkan langkah pragmatis ke depan.",
+    "drop": {
+      "title": "Kirim Pesan",
+      "body": "Gunakan formulir di bawah atau kirim email—mana saja yang paling mudah. Saya membaca setiap pesan."
+    },
+    "form": {
+      "name_label": "Nama *",
+      "email_label": "Email *",
+      "subject_label": "Subjek",
+      "message_label": "Pesan *",
+      "name_ph": "Nama lengkapmu",
+      "email_ph": "kamu@perusahaan.com",
+      "subject_ph": "Proyek, pertanyaan, atau kolaborasi",
+      "message_ph": "Jelaskan tujuan, kendala, dan jadwal secara singkat.",
+      "send": "Kirim"
+    },
+    "connect": {
+      "title": "Mari Terhubung",
+      "body": "Sedang memvalidasi konsep, menumbuhkan sistem yang ada, atau butuh sudut pandang kedua? Saya siap berdiskusi dan memberikan langkah lanjutan yang jelas.",
+      "findMe": "Temukan Saya Online"
+    },
+    "info": {
+      "email": {
+        "title": "Email",
+        "value": "hello@domiadi.com"
+      },
+      "location": {
+        "title": "Lokasi",
+        "value": "Tersedia global"
+      },
+      "response": {
+        "title": "Waktu Respon",
+        "value": "Biasanya < 24 jam"
+      }
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "footer": {
+    "engineered": "Dibangun dengan",
+    "rights": "Hak cipta dilindungi."
+  },
+  "error404": {
+    "title": "404 - Halaman Tidak Ditemukan | Domi Adiwijaya",
+    "h2": "Halaman Tidak Ditemukan",
+    "p": "Halaman yang kamu cari tidak ada atau sudah dipindahkan.",
+    "goHome": "Kembali",
+    "links": "Atau coba salah satu tautan ini:"
+  }
+}
