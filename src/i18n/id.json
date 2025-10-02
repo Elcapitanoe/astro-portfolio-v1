@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Domi Adiwijaya — Portofolio",
-    "description": "Jelajahi portofolio, wawasan teknologi, dan proyek inovatif Domi Adiwijaya, seorang Tech & HomeLab Enthusiast profesional."
+    "title": "Domi Adiwijaya",
+    "description": "Jelajahi portofolio, wawasan teknologi, dan proyek inovatif Domi Adiwijaya, seorang praktisi teknologi dan homelab profesional."
   },
   "nav": {
     "home": "Beranda",
@@ -17,42 +17,42 @@
       "1": "Domi",
       "2": "Adiwijaya"
     },
-    "tagline": "Engineer Sistem & Homelab",
-    "blurb": "Saya menghadirkan sistem yang andal. Dari arsitektur homelab hingga otomasi kelas produksi, saya menerjemahkan batasan kompleks menjadi solusi elegan dan tangguh.",
-    "cta": "Lihat karyaku"
+    "tagline": "Insinyur Sistem & Homelab",
+    "blurb": "Saya membangun sistem yang andal. Dari arsitektur homelab hingga otomasi setara produksi, saya menerjemahkan batasan kompleks menjadi solusi yang elegan dan tangguh.",
+    "cta": "Lihat Karya Saya"
   },
   "about": {
     "h2": {
       "1": "Tentang",
       "2": "Saya"
     },
-    "lead": "Saya terdorong untuk membuat teknologi jauh lebih bermanfaat, baik di homelab terkontrol maupun saat membantu orang lain menuntaskan tantangan nyata.",
-    "p1": "Saya Domi. Seorang teknolog seumur hidup yang mengubah rasa ingin tahu sejak dini menjadi praktik disiplin merancang sistem untuk menyelesaikan masalah nyata.",
-    "p2": "Homelab saya berfungsi sebagai lingkungan R&D terfokus: saya uji tekan, bongkar, dan perkuat ide, lalu produksi apa pun yang terbukti kokoh.",
-    "p3": "Selain konfigurasi dan otomasi, saya mendokumentasikan dan membagikan apa yang saya pelajari agar orang lain bisa menavigasi kompleksitas lebih cepat. Momen ketika semuanya klik dan berjalan mulus adalah tujuan utamanya.",
+    "lead": "Saya terdorong untuk menjadikan teknologi jauh lebih bermanfaat, baik di homelab terkontrol maupun saat membantu orang lain menuntaskan tantangan nyata.",
+    "p1": "Saya Domi. Penggiat teknologi sejak dini yang menyalurkan rasa ingin tahu menjadi praktik disiplin merancang sistem untuk menyelesaikan masalah nyata.",
+    "p2": "Homelab saya berfungsi sebagai lingkungan riset & pengembangan (R&D) yang terfokus: saya uji tekan, bongkar, dan perkuat ide, lalu memproduksi apa pun yang terbukti kokoh.",
+    "p3": "Selain konfigurasi dan otomasi, saya mendokumentasikan serta membagikan pembelajaran agar orang lain dapat menavigasi kompleksitas lebih cepat. Momen ketika semuanya selaras dan berjalan mulus adalah tujuan utama.",
     "nutshell": "Singkatnya",
     "bullets": {
-      "1": "R&D homelab dan pemecah masalah pragmatis",
+      "1": "R&D homelab dan pemecah masalah yang pragmatis",
       "2": "Praktisi yang mengutamakan otomasi",
-      "3": "Kontributor open-source",
+      "3": "Kontributor sumber terbuka",
       "4": "Pembelajar tanpa henti, selalu ingin tahu"
     },
     "highlights": {
       "innovation": {
         "title": "Inovasi Teknologi",
-        "description": "Saya mengevaluasi teknologi baru dan merancang solusi elegan serta skalabel untuk masalah besar."
+        "description": "Saya mengevaluasi teknologi baru dan merancang solusi yang elegan serta skalabel untuk masalah besar."
       },
       "homelab": {
         "title": "R&D Homelab",
-        "description": "Lingkungan terkontrol tempat saya menguji, menguatkan, dan memproduksi ide sebelum digunakan sungguhan."
+        "description": "Lingkungan terkontrol tempat saya menguji, memperkuat, dan memproduksi ide sebelum digunakan secara nyata."
       },
       "automation": {
         "title": "Otomasi Dulu",
-        "description": "Setiap tugas yang saya ulang dua kali langsung masuk kandidat otomasi yang andal dan idempoten."
+        "description": "Setiap tugas yang saya ulang lebih dari dua kali langsung masuk kandidat otomasi yang andal dan idempoten."
       },
       "sharing": {
         "title": "Berbagi Pengetahuan",
-        "description": "Saya mendistilasi pelajaran menjadi dokumentasi, demo, dan sesi berbagi untuk mempercepat pembelajaran tim."
+        "description": "Saya mendistilasi pembelajaran menjadi dokumentasi, demo, dan sesi berbagi untuk mempercepat kurva belajar tim."
       }
     }
   },
@@ -61,7 +61,7 @@
       "1": "Perangkat yang Saya",
       "2": "Gunakan"
     },
-    "lead": "Rangkaian alat yang saya andalkan untuk merancang, mengotomasi, dan mengoperasikan sistem yang elegan saat sibuk dan tetap terprediksi ketika gagal.",
+    "lead": "Rangkaian alat yang saya andalkan untuk merancang, mengotomasi, dan mengoperasikan sistem yang elegan saat beban tinggi dan tetap terprediksi ketika terjadi kegagalan.",
     "categories": {
       "infrastructure": {
         "title": "Infrastruktur & Cloud",
@@ -79,8 +79,8 @@
           "linuxAdministration": "Administrasi Linux",
           "automationScripts": "Skrip Otomasi",
           "storageSolutions": "Solusi Penyimpanan",
-          "monitoringLogging": "Pemantauan & Logging",
-          "backupRecovery": "Backup & Pemulihan"
+          "monitoringLogging": "Pemantauan & Pencatatan (Logging)",
+          "backupRecovery": "Pencadangan & Pemulihan"
         }
       },
       "security": {
@@ -96,7 +96,7 @@
     },
     "tail": {
       "title": "Terus Belajar",
-      "body": "Teknologi berubah setiap hari. Saya terus bereksperimen untuk menguji alat baru, menyempurnakan praktik, dan menghadirkan hasil yang terukur lebih baik."
+      "body": "Teknologi berubah setiap hari. Saya terus bereksperimen untuk menguji alat baru, menyempurnakan praktik, dan menghadirkan hasil yang lebih terukur."
     }
   },
   "services": {
@@ -104,17 +104,17 @@
       "1": "Bagaimana Saya Bisa",
       "2": "Membantu"
     },
-    "lead": "Dari infrastruktur penuh hingga tugas membandel yang ingin kamu delegasikan, saya menghadirkan solusi yang pragmatis dan tahan lama.",
+    "lead": "Dari infrastruktur menyeluruh hingga tugas membandel yang ingin Anda delegasikan, saya menghadirkan solusi yang pragmatis dan tahan lama.",
     "cards": {
       "homelab": {
-        "title": "Pembangunan HomeLab",
+        "title": "Pembangunan Homelab",
         "description": "Rancang dan bangun homelab khusus untuk belajar, staging, atau self-hosting dengan jaringan, virtualisasi, dan penyimpanan yang tangguh.",
         "features": {
-          "1": "Rekomendasi hardware",
+          "1": "Rekomendasi perangkat keras",
           "2": "Topologi jaringan",
           "3": "Penyiapan virtualisasi",
           "4": "Arsitektur penyimpanan",
-          "5": "Daya & resiliensi"
+          "5": "Catu daya & resiliensi"
         }
       },
       "cloud": {
@@ -123,14 +123,14 @@
         "features": {
           "1": "Strategi migrasi",
           "2": "Optimasi biaya",
-          "3": "Tuning performa",
+          "3": "Penyetelan performa",
           "4": "Desain arsitektur",
           "5": "Penyiapan kepatuhan"
         }
       },
       "security": {
         "title": "Penataan Keamanan",
-        "description": "Bangun kontrol keamanan yang pragmatis untuk menurunkan risiko secara nyata tanpa memperlambat delivery.",
+        "description": "Bangun pengendalian keamanan yang pragmatis untuk menurunkan risiko secara nyata tanpa memperlambat proses rilis.",
         "features": {
           "1": "Keamanan jaringan",
           "2": "Kontrol akses",
@@ -141,42 +141,42 @@
       },
       "automation": {
         "title": "Otomasi Andal",
-        "description": "Hapus pekerjaan repetitif dengan otomasi idempoten yang kuat sehingga kamu bisa fokus pada hasil yang penting.",
+        "description": "Hilangkan pekerjaan repetitif dengan otomasi idempoten yang kuat sehingga Anda dapat fokus pada hasil yang penting.",
         "features": {
-          "1": "Skrip kustom",
+          "1": "Skrip khusus",
           "2": "Otomasi proses",
           "3": "Pipeline CI/CD",
           "4": "Infrastruktur sebagai kode",
-          "5": "Optimasi workflow"
+          "5": "Optimasi alur kerja"
         }
       },
       "monitoring": {
-        "title": "Monitoring & Alert",
-        "description": "Dapatkan visibilitas dan sinyal dini yang bisa ditindak sebelum pengguna merasakan dampaknya.",
+        "title": "Pemantauan & Peringatan",
+        "description": "Dapatkan visibilitas dan sinyal dini yang dapat ditindaklanjuti sebelum pengguna merasakan dampaknya.",
         "features": {
           "1": "Pemantauan sistem",
-          "2": "Alert cerdas",
-          "3": "Dasbor performa",
+          "2": "Peringatan cerdas",
+          "3": "Dasbor kinerja",
           "4": "Pemeriksaan kesehatan",
           "5": "Agregasi log"
         }
       },
       "data": {
         "title": "Data & Backup",
-        "description": "Lindungi data penting dengan backup tangguh, pemulihan cepat, dan manajemen siklus hidup yang disiplin.",
+        "description": "Lindungi data penting dengan pencadangan yang tangguh, pemulihan cepat, dan manajemen siklus hidup yang disiplin.",
         "features": {
-          "1": "Strategi backup",
-          "2": "Disaster recovery",
+          "1": "Strategi pencadangan",
+          "2": "Pemulihan bencana",
           "3": "Migrasi data",
           "4": "Optimasi penyimpanan",
-          "5": "Arsip data"
+          "5": "Pengarsipan data"
         }
       }
     },
     "tail": {
       "title": "Butuh Yang Berbeda?",
-      "body": "Setiap konteks unik dan template jarang pas. Ceritakan kebutuhanmu, kita akan merancang solusi yang sejalan dengan tujuan, kendala, dan jadwalmu.",
-      "cta": "Ayo diskusi"
+      "body": "Setiap konteks unik dan templat jarang pas. Ceritakan kebutuhan Anda, kita akan merancang solusi yang sejalan dengan tujuan, kendala, dan jadwal Anda.",
+      "cta": "Mari berdiskusi"
     }
   },
   "contact": {
@@ -184,26 +184,26 @@
       "1": "Hubungi",
       "2": "Saya"
     },
-    "lead": "Punya inisiatif yang ingin dipetakan atau masalah yang perlu diurai? Hubungi saya, saya siap memahami tujuanmu dan menyiapkan langkah pragmatis ke depan.",
+    "lead": "Punya inisiatif yang ingin dipetakan atau masalah yang perlu diurai? Hubungi saya; saya siap memahami tujuan Anda dan menyiapkan langkah pragmatis berikutnya.",
     "drop": {
       "title": "Kirim Pesan",
-      "body": "Gunakan formulir di bawah atau kirim email—mana saja yang paling mudah. Saya membaca setiap pesan."
+      "body": "Gunakan formulir di bawah ini atau kirim email—mana yang paling mudah. Saya membaca setiap pesan."
     },
     "form": {
       "name_label": "Nama *",
       "email_label": "Email *",
       "subject_label": "Subjek",
       "message_label": "Pesan *",
-      "name_ph": "Nama lengkapmu",
-      "email_ph": "kamu@perusahaan.com",
+      "name_ph": "Nama lengkap Anda",
+      "email_ph": "anda@perusahaan.com",
       "subject_ph": "Proyek, pertanyaan, atau kolaborasi",
       "message_ph": "Jelaskan tujuan, kendala, dan jadwal secara singkat.",
       "send": "Kirim"
     },
     "connect": {
       "title": "Mari Terhubung",
-      "body": "Sedang memvalidasi konsep, menumbuhkan sistem yang ada, atau butuh sudut pandang kedua? Saya siap berdiskusi dan memberikan langkah lanjutan yang jelas.",
-      "findMe": "Temukan Saya Online"
+      "body": "Sedang memvalidasi konsep, menumbuhkan sistem yang ada, atau membutuhkan sudut pandang kedua? Saya siap berdiskusi dan memberikan langkah lanjutan yang jelas.",
+      "findMe": "Temukan Saya Daring"
     },
     "info": {
       "email": {
@@ -212,11 +212,11 @@
       },
       "location": {
         "title": "Lokasi",
-        "value": "Tersedia global"
+        "value": "Tersedia secara global"
       },
       "response": {
-        "title": "Waktu Respon",
-        "value": "Biasanya < 24 jam"
+        "title": "Waktu Respons",
+        "value": "Biasanya kurang dari 24 jam"
       }
     },
     "social": {
@@ -231,8 +231,8 @@
   "error404": {
     "title": "404 - Halaman Tidak Ditemukan | Domi Adiwijaya",
     "h2": "Halaman Tidak Ditemukan",
-    "p": "Halaman yang kamu cari tidak ada atau sudah dipindahkan.",
-    "goHome": "Kembali",
+    "p": "Halaman yang Anda cari tidak ada atau sudah dipindahkan.",
+    "goHome": "Kembali ke Beranda",
     "links": "Atau coba salah satu tautan ini:"
   }
 }
