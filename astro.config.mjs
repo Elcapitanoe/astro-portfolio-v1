@@ -17,5 +17,11 @@ export default defineConfig({
       minify: 'esbuild',
       cssMinify: 'esbuild'
     }
-  }
+  },
+  redirects: {
+    "/": {
+      status: 302,
+      destination: "/en"
+    }
+  },
 });
