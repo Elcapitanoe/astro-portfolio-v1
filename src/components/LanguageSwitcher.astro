@@ -7,25 +7,60 @@ interface Props {
 }
 
 const { lang, class: className = '' } = Astro.props;
+
+const activeLocale =
+  SUPPORTED_LOCALES.find((locale) => locale.code === lang) ?? SUPPORTED_LOCALES[0];
+const containerClasses = ['relative inline-block w-full text-left md:w-auto', className]
+  .filter(Boolean)
+  .join(' ');
 ---
 
-<div class={`flex items-center space-x-2 ${className}`.trim()}>
-  {SUPPORTED_LOCALES.map((locale) => {
-    const isActive = locale.code === lang;
-    const baseClasses = 'px-3 py-1 rounded-md text-sm font-medium transition-colors duration-300';
-    const activeClasses = 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-sm';
-    const inactiveClasses = 'text-slate-300 hover:text-white hover:bg-slate-800/60';
-    return (
-      <a
-        href={`/${locale.code}/`}
-        data-lang-link={locale.code}
-        class={`${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
-        aria-current={isActive ? 'true' : 'false'}
+<div class={containerClasses}>
+  <details class="group relative w-full md:w-auto">
+    <summary
+      class="flex w-full items-center justify-between gap-2 rounded-md bg-gradient-to-r from-blue-500 to-purple-500 px-3 py-2 text-sm font-medium text-white shadow-sm transition duration-300 hover:from-blue-400 hover:to-purple-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
+    >
+      <span>{activeLocale.name}</span>
+      <svg
+        class="h-4 w-4 text-slate-400 transition-transform duration-300 group-open:rotate-180"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        aria-hidden="true"
       >
-        {locale.name}
-      </a>
-    );
-  })}
+        <path
+          fill-rule="evenodd"
+          d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 0 1 1.08 1.04l-4.25 4.25a.75.75 0 0 1-1.06 0L5.21 8.27a.75.75 0 0 1 .02-1.06z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </summary>
+
+    <div
+      class="absolute left-0 right-0 z-50 mt-2 w-full min-w-[10rem] max-w-xs rounded-md bg-slate-900/95 shadow-lg ring-1 ring-black/5 backdrop-blur-sm md:left-auto md:w-48"
+    >
+      <ul class="py-2 text-sm text-slate-200">
+        {SUPPORTED_LOCALES.map((locale) => {
+          const isActive = locale.code === lang;
+          return (
+            <li>
+              <a
+                href={`/${locale.code}/`}
+                data-lang-link={locale.code}
+                class={`block px-4 py-2 transition-colors duration-200 ${
+                  isActive
+                    ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-sm'
+                    : 'hover:bg-slate-800/70 hover:text-white'
+                }`}
+                aria-current={isActive ? 'true' : 'false'}
+              >
+                {locale.name}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  </details>
 </div>
 
 <script is:inline>
@@ -46,3 +81,9 @@ const { lang, class: className = '' } = Astro.props;
     });
   })();
 </script>
+
+<style>
+  summary::-webkit-details-marker {
+    display: none;
+  }
+</style>
