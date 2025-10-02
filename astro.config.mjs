@@ -1,20 +1,22 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
+import sitemap from '@astrojs/sitemap';
 
-// https://astro.build/config
 export default defineConfig({
-  output: 'static',
-  base: '/domiadi.com/',
-  site: 'https://elcapitanoe.github.io',
-  integrations: [tailwind()],
-  build: {
-    inlineStylesheets: 'always'
-  },
+  site: 'https://domiadi.com',
+  integrations: [
+    tailwind(),
+    sitemap({
+      filter: (page) => !page.includes('/draft'),
+      entryLimit: 45000
+    })
+  ],
+  build: { inlineStylesheets: 'auto' },
   compressHTML: true,
   vite: {
     build: {
-      cssMinify: true,
-      minify: true
+      minify: 'esbuild',
+      cssMinify: 'esbuild'
     }
   }
 });
