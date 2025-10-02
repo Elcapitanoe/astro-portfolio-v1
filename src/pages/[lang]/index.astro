@@ -1,0 +1,42 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Hero from '../../components/Hero.astro';
+import About from '../../components/About.astro';
+import Skills from '../../components/Skills.astro';
+import Services from '../../components/Services.astro';
+import Contact from '../../components/Contact.astro';
+import Footer from '../../components/Footer.astro';
+import Hreflang from '../../components/Hreflang.astro';
+import { createT } from '../../lib/i18n';
+import { DEFAULT_LOCALE, SUPPORTED_LOCALES, isLocale, normalizeLocale, type Locale } from '../../lib/locales';
+
+export function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((locale) => ({ params: { lang: locale.code } }));
+}
+
+const paramLang = Astro.params.lang ?? DEFAULT_LOCALE;
+const normalized = normalizeLocale(paramLang);
+
+if (!isLocale(paramLang)) {
+  return Astro.redirect(`/${normalized}/`);
+}
+
+const lang: Locale = normalized;
+const t = await createT(lang);
+const title = t('meta.title');
+const description = t('meta.description');
+---
+
+<Layout title={title} description={description} lang={lang}>
+  <Hreflang slot="head" path="/" />
+  <Navigation lang={lang} />
+  <main>
+    <Hero lang={lang} />
+    <About lang={lang} />
+    <Skills lang={lang} />
+    <Services lang={lang} />
+    <Contact lang={lang} />
+  </main>
+  <Footer lang={lang} />
+</Layout>

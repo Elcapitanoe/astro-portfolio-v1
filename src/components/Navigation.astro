@@ -1,11 +1,24 @@
 ---
+import { createT } from '../lib/i18n';
+import type { Locale } from '../lib/locales';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const t = await createT(lang);
+
 const navItems = [
-  { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Expertise' },
-  { href: '#services', label: 'Services' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#home', label: t('nav.home') },
+  { href: '#about', label: t('nav.about') },
+  { href: '#skills', label: t('nav.skills') },
+  { href: '#services', label: t('nav.services') },
+  { href: '#contact', label: t('nav.contact') }
 ];
+
+const menuLabel = t('nav.openMenu');
 ---
 
 <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm shadow-lg">
@@ -15,7 +28,7 @@ const navItems = [
         <span class="text-xl font-bold text-white">DA</span>
       </div>
 
-      <div class="hidden md:block">
+      <div class="hidden md:flex items-center space-x-6">
         <div class="ml-10 flex items-baseline space-x-4">
           {navItems.map((item) => (
             <a href={item.href} class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-slate-800/50">
@@ -23,11 +36,12 @@ const navItems = [
             </a>
           ))}
         </div>
+        <LanguageSwitcher lang={lang} />
       </div>
 
       <div class="md:hidden">
         <details class="relative">
-          <summary class="list-none text-slate-300 hover:text-white p-2 cursor-pointer" aria-label="Open navigation menu">
+          <summary class="list-none text-slate-300 hover:text-white p-2 cursor-pointer" aria-label={menuLabel}>
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -40,6 +54,9 @@ const navItems = [
                   {item.label}
                 </a>
               ))}
+            </div>
+            <div class="border-t border-slate-700/40 px-3 py-3">
+              <LanguageSwitcher lang={lang} class="flex-wrap" />
             </div>
           </div>
         </details>

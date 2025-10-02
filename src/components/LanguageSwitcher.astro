@@ -1,0 +1,48 @@
+---
+import { SUPPORTED_LOCALES, type Locale } from '../lib/locales';
+
+interface Props {
+  lang: Locale;
+  class?: string;
+}
+
+const { lang, class: className = '' } = Astro.props;
+---
+
+<div class={`flex items-center space-x-2 ${className}`.trim()}>
+  {SUPPORTED_LOCALES.map((locale) => {
+    const isActive = locale.code === lang;
+    const baseClasses = 'px-3 py-1 rounded-md text-sm font-medium transition-colors duration-300';
+    const activeClasses = 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-sm';
+    const inactiveClasses = 'text-slate-300 hover:text-white hover:bg-slate-800/60';
+    return (
+      <a
+        href={`/${locale.code}/`}
+        data-lang-link={locale.code}
+        class={`${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
+        aria-current={isActive ? 'true' : 'false'}
+      >
+        {locale.name}
+      </a>
+    );
+  })}
+</div>
+
+<script is:inline>
+  (() => {
+    if (typeof window === 'undefined') return;
+    if (window.__langSwitcherInit) return;
+    window.__langSwitcherInit = true;
+
+    const links = document.querySelectorAll('[data-lang-link]');
+    const maxAge = 60 * 60 * 24 * 365;
+
+    links.forEach((link) => {
+      link.addEventListener('click', () => {
+        const code = link.getAttribute('data-lang-link');
+        if (!code) return;
+        document.cookie = `lang=${code}; path=/; max-age=${maxAge}; SameSite=Lax`;
+      });
+    });
+  })();
+</script>

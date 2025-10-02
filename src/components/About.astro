@@ -1,72 +1,58 @@
 ---
+import { createT } from '../lib/i18n';
+import type { Locale } from '../lib/locales';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const t = await createT(lang);
+
 const highlights = [
-  {
-    title: 'Tech Innovation',
-    description: 'I interrogate emerging technologies and architect elegant, scalable solutions to consequential problems.',
-    icon: 'code'
-  },
-  {
-    title: 'Homelab R&D',
-    description: 'A controlled environment where I stress-test, harden, and productionize ideas before they face real traffic.',
-    icon: 'server'
-  },
-  {
-    title: 'Automation-First',
-    description: 'Anything I repeat twice becomes a candidate for reliable, idempotent automation.',
-    icon: 'zap'
-  },
-  {
-    title: 'Knowledge Sharing',
-    description: 'I codify lessons into docs, demos, and talks, teaching to compound learning across teams.',
-    icon: 'heart'
-  }
+  { icon: 'code', key: 'innovation' },
+  { icon: 'server', key: 'homelab' },
+  { icon: 'zap', key: 'automation' },
+  { icon: 'heart', key: 'sharing' }
 ];
+
+const bulletKeys = ['1', '2', '3', '4'];
 ---
 
 <section id="about" class="py-20 bg-slate-800/50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
       <h2 class="text-4xl font-bold text-white mb-4">
-        What I’m <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">About</span>
+        {t('about.h2.1')} <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">{t('about.h2.2')}</span>
       </h2>
       <p class="text-xl text-slate-300 max-w-3xl mx-auto">
-        I’m driven to make technology meaningfully better, whether in a controlled homelab or by helping others resolve complex, real-world challenges.
+        {t('about.lead')}
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
       <div class="space-y-6">
         <p class="text-lg text-slate-300 leading-relaxed">
-          I’m Domi. A lifelong technologist, I’ve turned early curiosity into a disciplined practice of designing systems that solve consequential, real-world problems.
+          {t('about.p1')}
         </p>
         <p class="text-lg text-slate-300 leading-relaxed">
-          My homelab operates as a focused R&amp;D environment: I stress-test, break, and harden ideas, then productionize what proves robust.
+          {t('about.p2')}
         </p>
         <p class="text-lg text-slate-300 leading-relaxed">
-          Beyond configuration and automation work, I codify and share what I learn so others can navigate complexity faster. That moment when everything clicks and just works is the target.
+          {t('about.p3')}
         </p>
       </div>
-      
+
       <div class="relative">
         <div class="bg-gradient-to-br from-slate-700/50 to-slate-800/50 p-8 rounded-2xl backdrop-blur-sm border border-slate-600/20">
-          <h3 class="text-2xl font-semibold text-white mb-6">In a Nutshell</h3>
+          <h3 class="text-2xl font-semibold text-white mb-6">{t('about.nutshell')}</h3>
           <ul class="space-y-3 text-slate-300">
-            <li class="flex items-center space-x-3">
-              <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
-              <span>Homelab R&amp;D and pragmatic problem-solver</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <div class="w-2 h-2 bg-purple-400 rounded-full"></div>
-              <span>Automation-first practitioner</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <div class="w-2 h-2 bg-green-400 rounded-full"></div>
-              <span>Open-source contributor</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <div class="w-2 h-2 bg-yellow-400 rounded-full"></div>
-              <span>Perpetual learner, curious by default</span>
-            </li>
+            {bulletKeys.map((key, index) => (
+              <li class="flex items-center space-x-3">
+                <div class={`w-2 h-2 rounded-full ${['bg-blue-400', 'bg-purple-400', 'bg-green-400', 'bg-yellow-400'][index]}`}></div>
+                <span>{t(`about.bullets.${key}`)}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
@@ -78,30 +64,30 @@ const highlights = [
           <div class="mb-4">
             {highlight.icon === 'code' && (
               <svg class="w-8 h-8 text-blue-400 group-hover:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
               </svg>
             )}
             {highlight.icon === 'server' && (
               <svg class="w-8 h-8 text-blue-400 group-hover:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
               </svg>
             )}
             {highlight.icon === 'zap' && (
               <svg class="w-8 h-8 text-blue-400 group-hover:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             )}
             {highlight.icon === 'heart' && (
               <svg class="w-8 h-8 text-blue-400 group-hover:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
             )}
           </div>
           <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-blue-400">
-            {highlight.title}
+            {t(`about.highlights.${highlight.key}.title`)}
           </h3>
           <p class="text-slate-300 text-sm leading-relaxed">
-            {highlight.description}
+            {t(`about.highlights.${highlight.key}.description`)}
           </p>
         </div>
       ))}

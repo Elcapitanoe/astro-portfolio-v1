@@ -1,22 +1,48 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navigation from '../components/Navigation.astro';
-import Hero from '../components/Hero.astro';
-import About from '../components/About.astro';
-import Skills from '../components/Skills.astro';
-import Services from '../components/Services.astro';
-import Contact from '../components/Contact.astro';
-import Footer from '../components/Footer.astro';
+import { DEFAULT_LOCALE, SUPPORTED_LOCALES } from '../lib/locales';
+
+const supportedLocales = SUPPORTED_LOCALES;
+void supportedLocales;
+const defaultLocale = DEFAULT_LOCALE;
 ---
 
-<Layout title="Domi Adiwijaya">
-  <Navigation />
-  <main>
-    <Hero />
-    <About />
-    <Skills />
-    <Services />
-    <Contact />
-  </main>
-  <Footer />
-</Layout>
+<!DOCTYPE html>
+<html lang={defaultLocale}>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script is:inline>
+      const SUPPORTED = JSON.parse('{JSON.stringify(supportedLocales.map((locale) => locale.code))}');
+      const DEFAULT_LOCALE = JSON.parse('{JSON.stringify(defaultLocale)}');
+
+      const getCookie = (name) => {
+        const value = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+        return value ? decodeURIComponent(value[1]) : null;
+      };
+
+      const resolveLocale = () => {
+        const cookieLocale = getCookie('lang');
+        if (cookieLocale && SUPPORTED.includes(cookieLocale)) {
+          return cookieLocale;
+        }
+
+        const navigatorLocale = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+        if (navigatorLocale) {
+          const base = navigatorLocale.toLowerCase().split(/[-_]/)[0];
+          if (SUPPORTED.includes(base)) {
+            return base;
+          }
+        }
+
+        return DEFAULT_LOCALE;
+      };
+
+      const targetLocale = resolveLocale();
+      window.location.replace(`/${targetLocale}/`);
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-900 text-white flex items-center justify-center">
+    <p>Redirecting…</p>
+  </body>
+</html>
