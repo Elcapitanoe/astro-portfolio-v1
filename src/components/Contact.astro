@@ -1,23 +1,8 @@
 ---
 const contactInfo = [
-  {
-    icon: 'mail',
-    title: 'Email',
-    content: 'hello@domiadi.com',
-    href: 'mailto:hello@domiadi.com'
-  },
-  {
-    icon: 'mappin',
-    title: 'Location',
-    content: 'Available worldwide',
-    href: null
-  },
-  {
-    icon: 'clock',
-    title: 'Response Time',
-    content: 'Typically within 24 hours',
-    href: null
-  }
+  { icon: 'mail',   title: 'Email',         content: 'hello@domiadi.com', href: 'mailto:hello@domiadi.com' },
+  { icon: 'mappin', title: 'Location',      content: 'Available worldwide', href: null },
+  { icon: 'clock',  title: 'Response Time', content: 'Typically within 24 hours', href: null }
 ];
 
 const socialLinks = [
@@ -32,8 +17,6 @@ const getContactIcon = (iconName: string) => {
     clock: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>',
     github: 'M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z',
     linkedin: 'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z',
-    server: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>',
-    monitor: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>',
     message: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>',
     send: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>'
   };
@@ -48,12 +31,11 @@ const getContactIcon = (iconName: string) => {
         Get In <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Touch</span>
       </h2>
       <p class="text-xl text-slate-300 max-w-3xl mx-auto">
-        Have an initiative to scope or a problem space to unpack? Reach out—I'm keen to understand your objectives and outline a pragmatic path forward.
+        Have an initiative to scope or a problem space to unpack? Reach out, I’m keen to understand your objectives and outline a pragmatic path forward.
       </p>
     </div>
 
     <div class="grid lg:grid-cols-2 gap-12">
-      <!-- Contact Form -->
       <div class="space-y-8">
         <div>
           <h3 class="text-2xl font-semibold text-white mb-4 flex items-center space-x-2">
@@ -63,71 +45,33 @@ const getContactIcon = (iconName: string) => {
             <span>Drop Me a Line</span>
           </h3>
           <p class="text-slate-300 mb-6">
-            Use the form below or send an email—whichever is more convenient. I read every message.
+            Use the form below or send an email, whichever is more convenient. I read every message.
           </p>
         </div>
 
         <form id="contact-form" class="space-y-6">
           <div class="grid md:grid-cols-2 gap-6">
             <div>
-              <label for="name" class="block text-sm font-medium text-slate-300 mb-2">
-                Name *
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                class="w-full px-4 py-3 bg-slate-800/50 border border-slate-600/50 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400"
-                placeholder="Your full name"
-              />
+              <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Name *</label>
+              <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-slate-800/50 border border-slate-600/50 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400" placeholder="Your full name" />
             </div>
             <div>
-              <label for="email" class="block text-sm font-medium text-slate-300 mb-2">
-                Email *
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                class="w-full px-4 py-3 bg-slate-800/50 border border-slate-600/50 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400"
-                placeholder="you@company.com"
-              />
+              <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Email *</label>
+              <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-slate-800/50 border border-slate-600/50 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400" placeholder="you@company.com" />
             </div>
           </div>
           
           <div>
-            <label for="subject" class="block text-sm font-medium text-slate-300 mb-2">
-              Subject
-            </label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              class="w-full px-4 py-3 bg-slate-800/50 border border-slate-600/50 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400"
-              placeholder="Project, question, or collaboration"
-            />
+            <label for="subject" class="block text-sm font-medium text-slate-300 mb-2">Subject</label>
+            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-slate-800/50 border border-slate-600/50 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400" placeholder="Project, question, or collaboration" />
           </div>
           
           <div>
-            <label for="message" class="block text-sm font-medium text-slate-300 mb-2">
-              Message *
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              rows="6"
-              class="w-full px-4 py-3 bg-slate-800/50 border border-slate-600/50 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400 resize-none"
-              placeholder="Briefly outline goals, constraints, and timelines."
-            ></textarea>
+            <label for="message" class="block text-sm font-medium text-slate-300 mb-2">Message *</label>
+            <textarea id="message" name="message" required rows="6" class="w-full px-4 py-3 bg-slate-800/50 border border-slate-600/50 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400 resize-none" placeholder="Briefly outline goals, constraints, and timelines."></textarea>
           </div>
           
-          <a
-            href="mailto:mail@domiadi.com"
-            class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-4 rounded-xl font-medium hover:shadow-lg hover:shadow-blue-500/25 flex items-center justify-center space-x-2"
-          >
+          <a href="mailto:hello@domiadi.com" class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-4 rounded-xl font-medium hover:shadow-lg hover:shadow-blue-500/25 flex items-center justify-center space-x-2">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <Fragment set:html={getContactIcon('send')} />
             </svg>
@@ -136,7 +80,6 @@ const getContactIcon = (iconName: string) => {
         </form>
       </div>
 
-      <!-- Contact Information -->
       <div class="space-y-8">
         <div>
           <h3 class="text-2xl font-semibold text-white mb-6">Let’s Connect</h3>
@@ -145,7 +88,6 @@ const getContactIcon = (iconName: string) => {
           </p>
         </div>
 
-        <!-- Contact Cards -->
         <div class="space-y-4">
           {contactInfo.map((info) => (
             <div class="bg-slate-800/30 backdrop-blur-sm rounded-xl p-6 border border-slate-700/20 hover:border-slate-600/40">
@@ -158,12 +100,7 @@ const getContactIcon = (iconName: string) => {
                 <div>
                   <h4 class="text-white font-medium">{info.title}</h4>
                   {info.href ? (
-                    <a 
-                      href={info.href} 
-                      class="text-slate-300 hover:text-blue-400"
-                    >
-                      {info.content}
-                    </a>
+                    <a href={info.href} class="text-slate-300 hover:text-blue-400">{info.content}</a>
                   ) : (
                     <p class="text-slate-300">{info.content}</p>
                   )}
@@ -173,27 +110,14 @@ const getContactIcon = (iconName: string) => {
           ))}
         </div>
 
-        <!-- Social Links -->
         <div>
           <h4 class="text-white font-medium mb-4">Find Me Online</h4>
           <div class="flex space-x-4">
             {socialLinks.map((link) => (
-              <a
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="p-3 bg-slate-800/50 backdrop-blur-sm rounded-xl hover:bg-slate-700/50 group"
-                aria-label={link.label}
-              >
-                {link.icon === 'github' || link.icon === 'linkedin' ? (
-                  <svg class="w-5 h-5 text-slate-300 group-hover:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
-                    <path d={getContactIcon(link.icon)}></path>
-                  </svg>
-                ) : (
-                  <svg class="w-5 h-5 text-slate-300 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <Fragment set:html={getContactIcon(link.icon)} />
-                  </svg>
-                )}
+              <a href={link.href} target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-800/50 backdrop-blur-sm rounded-xl hover:bg-slate-700/50 group" aria-label={link.label}>
+                <svg class="w-5 h-5 text-slate-300 group-hover:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d={getContactIcon(link.icon)}></path>
+                </svg>
               </a>
             ))}
           </div>

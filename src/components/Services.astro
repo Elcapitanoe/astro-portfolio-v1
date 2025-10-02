@@ -3,7 +3,7 @@ const services = [
   {
     icon: 'server',
     title: 'HomeLab Setup',
-    description: 'Design and deploy a purpose-built homelab for learning, staging, or self-hosting—grounded in resilient networking, virtualization, and storage.',
+    description: 'Design and deploy a purpose-built homelab for learning, staging, or self-hosting, grounded in resilient networking, virtualization, and storage.',
     features: ['Hardware recommendations', 'Network topology', 'Virtualization setup', 'Storage architecture', 'Power & resilience']
   },
   {
@@ -27,7 +27,7 @@ const services = [
   {
     icon: 'monitor',
     title: 'Monitoring & Alerts',
-    description: 'Gain actionable visibility and early signal across systems—well before users feel the impact.',
+    description: 'Gain actionable visibility and early signal across systems, well before users feel the impact.',
     features: ['System monitoring', 'Smart alerts', 'Performance dashboards', 'Health checks', 'Log aggregation']
   },
   {
@@ -58,12 +58,12 @@ const getServiceIcon = (iconName: string) => {
         How I Can <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Help</span>
       </h2>
       <p class="text-xl text-slate-300 max-w-3xl mx-auto">
-        From full-stack infrastructure to that one stubborn task you want off your plate—I deliver pragmatic, durable solutions.
+        From full-stack infrastructure to that one stubborn task you want off your plate, I deliver pragmatic, durable solutions.
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {services.map((service, index) => (
+      {services.map((service) => (
         <div class="group bg-slate-800/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/20 hover:border-slate-600/40 hover:bg-slate-800/50">
           <div class="mb-4">
             <div class="p-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl w-fit group-hover:from-blue-500/30 group-hover:to-purple-500/30">
@@ -73,13 +73,8 @@ const getServiceIcon = (iconName: string) => {
             </div>
           </div>
 
-          <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-blue-400">
-            {service.title}
-          </h3>
-
-          <p class="text-slate-300 mb-4 leading-relaxed">
-            {service.description}
-          </p>
+          <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-blue-400">{service.title}</h3>
+          <p class="text-slate-300 mb-4 leading-relaxed">{service.description}</p>
 
           <ul class="space-y-2">
             {service.features.map((feature) => (
@@ -95,9 +90,7 @@ const getServiceIcon = (iconName: string) => {
 
     <div class="mt-16 text-center">
       <div class="bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/20">
-        <h3 class="text-2xl font-semibold text-white mb-4">
-          Need Something Different?
-        </h3>
+        <h3 class="text-2xl font-semibold text-white mb-4">Need Something Different?</h3>
         <p class="text-slate-300 mb-6 max-w-2xl mx-auto">
           Contexts vary and templates rarely fit. Tell me what you need, and we’ll design a solution that aligns with your goals, constraints, and timelines.
         </p>
