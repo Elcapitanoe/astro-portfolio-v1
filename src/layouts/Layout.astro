@@ -1,5 +1,6 @@
 ---
 import type { Locale } from '../lib/locales';
+import { SUPPORTED_LOCALES, DEFAULT_LOCALE, X_DEFAULT_URL } from '../lib/locales';
 
 export interface Props {
   title: string;
@@ -12,7 +13,11 @@ const {
   description = "Explore Domi Adiwijaya's portfolio, tech insights, and innovative projects by a professional Tech & HomeLab Enthusiast.",
   lang,
 } = Astro.props;
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+let path = Astro.url.pathname;
+if (!path.endsWith('/')) path += '/';
+const canonicalURL = new URL(path, Astro.site);
+const abs = (p: string) => new URL(p, Astro.site).href;
 ---
 
 <!DOCTYPE html>
@@ -24,30 +29,25 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <meta name="author" content="Domi Adiwijaya" />
-
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:url" content={canonicalURL.href} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/domi.png" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalURL} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta
-      property="twitter:image"
-      content="/domi.png"
-    />
+    <meta property="og:image" content={abs('/domi.png')} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL.href} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={abs('/domi.png')} />
     <meta name="twitter:creator" content="@domiadiwijaya" />
-
-    <script defer src="https://unpkg.com/flowbite@2.5.1/dist/flowbite.min.js" is:inline></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" is:inline></script>
-    <script defer data-domain="domiadi.com" src="https://plausible.io/js/script.js" is:inline></script>
-
-    <link rel="canonical" href={canonicalURL} />
+    <script defer is:inline src="https://unpkg.com/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script defer is:inline src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer is:inline data-domain="domiadi.com" src="https://plausible.io/js/script.js"></script>
+    {SUPPORTED_LOCALES.map(({ code }) => (
+      <link rel="alternate" hreflang={code} href={abs(`/${code}/`)} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={X_DEFAULT_URL ? abs(X_DEFAULT_URL) : abs(`/${DEFAULT_LOCALE}/`)} />
+    <link rel="canonical" href={canonicalURL.href} />
     <slot name="head" />
     <title>{title}</title>
   </head>
