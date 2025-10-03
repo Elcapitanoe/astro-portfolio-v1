@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "title": "Domi Adiwijaya",
+    "description": "Explora el portafolio, las ideas técnicas y los proyectos innovadores de Domi Adiwijaya, un profesional entusiasta de la tecnología y del homelab."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "skills": "Experiencia",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "openMenu": "Abrir menú de navegación"
+  },
+  "hero": {
+    "alt": "Domi Adiwijaya",
+    "title": {
+      "1": "Domi",
+      "2": "Adiwijaya"
+    },
+    "tagline": "Ingeniero de Sistemas y Homelab",
+    "blurb": "Diseño y entrego sistemas confiables. Desde arquitecturas de homelab hasta automatización de nivel productivo, convierto restricciones complejas en soluciones elegantes y resilientes.",
+    "cta": "Explorar mi trabajo"
+  },
+  "about": {
+    "h2": {
+      "1": "Sobre",
+      "2": "mí"
+    },
+    "lead": "Ya sea en un homelab controlado o ayudando a otros con retos reales y complejos, me motiva hacer que la tecnología importe de verdad.",
+    "p1": "Soy Domi. Como profesional de tecnología de toda la vida, convertí la curiosidad temprana en una práctica disciplinada: diseñar sistemas que resuelven problemas reales y significativos.",
+    "p2": "Mi homelab es un entorno de I+D enfocado: hago pruebas de estrés, rompo a propósito y fortalezco ideas, y llevo a producción lo que demuestra su valía.",
+    "p3": "Más allá de configuración y automatización, sistematizo lo aprendido y lo comparto para que otros atraviesen la complejidad más rápido. Cuando todo encaja y fluye, ese es el objetivo.",
+    "nutshell": "En pocas palabras",
+    "bullets": {
+      "1": "I+D de homelab; solucionador pragmático",
+      "2": "Practicante con mentalidad de automatización primero",
+      "3": "Colaborador de código abierto",
+      "4": "Aprendiz constante, curiosidad de base"
+    },
+    "highlights": {
+      "innovation": {
+        "title": "Innovación tecnológica",
+        "description": "Evalúo tecnologías emergentes y diseño soluciones elegantes y escalables para problemas críticos."
+      },
+      "homelab": {
+        "title": "I+D de Homelab",
+        "description": "Un entorno controlado donde someto ideas a estrés, las refuerzo y las preparo para producción antes del tráfico real."
+      },
+      "automation": {
+        "title": "Automatización primero",
+        "description": "Todo lo que se repite dos veces debería ser candidato a una automatización fiable e idempotente."
+      },
+      "sharing": {
+        "title": "Compartir conocimiento",
+        "description": "Destilo experiencias en documentos, demostraciones y charlas para acelerar el aprendizaje de los equipos."
+      }
+    }
+  },
+  "skills": {
+    "h2": {
+      "1": "Herramientas que",
+      "2": "utilizo"
+    },
+    "lead": "La cadena de herramientas en la que confío para diseñar, automatizar y operar sistemas que se mantengan elegantes bajo carga y previsibles ante fallos.",
+    "categories": {
+      "infrastructure": {
+        "title": "Infraestructura y nube",
+        "items": {
+          "virtualization": "Virtualización",
+          "containerOrchestration": "Orquestación de contenedores",
+          "cloudPlatforms": "Plataformas en la nube",
+          "networkDesign": "Diseño de redes",
+          "infrastructureAsCode": "Infraestructura como código"
+        }
+      },
+      "systemAdministration": {
+        "title": "Administración de sistemas",
+        "items": {
+          "linuxAdministration": "Administración de Linux",
+          "automationScripts": "Scripts de automatización",
+          "storageSolutions": "Soluciones de almacenamiento",
+          "monitoringLogging": "Monitoreo y registros",
+          "backupRecovery": "Copia de seguridad y recuperación"
+        }
+      },
+      "security": {
+        "title": "Seguridad y redes",
+        "items": {
+          "networkSecurity": "Seguridad de redes",
+          "firewallManagement": "Gestión de firewall",
+          "vpnSetup": "Configuración de VPN",
+          "accessControl": "Control de acceso",
+          "sslTlsConfiguration": "Configuración SSL/TLS"
+        }
+      }
+    },
+    "tail": {
+      "title": "Aprendizaje continuo",
+      "body": "La tecnología cambia cada día. Mantengo experimentos en curso, someto a estrés nuevas herramientas, perfecciono prácticas y entrego resultados mediblemente mejores."
+    }
+  },
+  "services": {
+    "h2": {
+      "1": "Cómo puedo",
+      "2": "ayudar"
+    },
+    "lead": "Desde infraestructura de extremo a extremo hasta esa tarea terca que deseas quitarte de encima, entrego soluciones pragmáticas y duraderas.",
+    "cards": {
+      "homelab": {
+        "title": "Configuración de Homelab",
+        "description": "Diseño y despliegue de un homelab a medida para aprendizaje, staging o autoalojamiento, sustentado en redes, virtualización y almacenamiento confiables.",
+        "features": {
+          "1": "Recomendaciones de hardware",
+          "2": "Topologías de red",
+          "3": "Configuración de virtualización",
+          "4": "Arquitectura de almacenamiento",
+          "5": "Energía y resiliencia"
+        }
+      },
+      "cloud": {
+        "title": "Migración a la nube",
+        "description": "Reduce el riesgo con un plan pragmático, sensible a costos y una arquitectura objetivo adecuada.",
+        "features": {
+          "1": "Estrategia de migración",
+          "2": "Optimización de costos",
+          "3": "Ajuste de rendimiento",
+          "4": "Diseño de arquitectura",
+          "5": "Configuración de cumplimiento"
+        }
+      },
+      "security": {
+        "title": "Implementación de seguridad",
+        "description": "Establece controles de seguridad prácticos que reduzcan el riesgo significativamente sin frenar la entrega.",
+        "features": {
+          "1": "Seguridad de red",
+          "2": "Control de acceso",
+          "3": "Configuración de firewall",
+          "4": "Auditorías de seguridad",
+          "5": "Escaneo de vulnerabilidades"
+        }
+      },
+      "automation": {
+        "title": "Automatización confiable",
+        "description": "Elimina trabajo repetitivo con automatizaciones sólidas e idempotentes para enfocarte en resultados que importan.",
+        "features": {
+          "1": "Scripts a medida",
+          "2": "Automatización de procesos",
+          "3": "Pipelines CI/CD",
+          "4": "Infraestructura como código",
+          "5": "Optimización de flujos"
+        }
+      },
+      "monitoring": {
+        "title": "Monitoreo y alertas",
+        "description": "Obtén visibilidad accionable y señales tempranas a través de los sistemas antes del impacto en usuarios.",
+        "features": {
+          "1": "Monitoreo de sistemas",
+          "2": "Alertas inteligentes",
+          "3": "Tableros de rendimiento",
+          "4": "Comprobaciones de salud",
+          "5": "Agregación de logs"
+        }
+      },
+      "data": {
+        "title": "Datos y copias de seguridad",
+        "description": "Protege datos críticos con copias resilientes, recuperación ágil y una gestión del ciclo de vida disciplinada.",
+        "features": {
+          "1": "Estrategias de respaldo",
+          "2": "Recuperación ante desastres",
+          "3": "Migración de datos",
+          "4": "Optimización de almacenamiento",
+          "5": "Archivado de datos"
+        }
+      }
+    },
+    "tail": {
+      "title": "¿Necesitas algo distinto?",
+      "body": "El contexto varía y los patrones rara vez encajan al 100%. Cuéntame tus necesidades y co-diseñamos una solución alineada con objetivos, restricciones y cronograma.",
+      "cta": "Conversemos"
+    }
+  },
+  "contact": {
+    "h2": {
+      "1": "Ponte en",
+      "2": "contacto"
+    },
+    "lead": "¿Hay una iniciativa para dimensionar o un área problemática por aclarar? Escríbeme: comprenderé tus objetivos y te propondré un camino práctico.",
+    "drop": {
+      "title": "Déjame un mensaje",
+      "body": "Usa el formulario de abajo o envíame un correo, lo que te resulte más cómodo. Leo cada mensaje."
+    },
+    "form": {
+      "name_label": "Nombre *",
+      "email_label": "Correo *",
+      "subject_label": "Asunto",
+      "message_label": "Mensaje *",
+      "name_ph": "Tu nombre completo",
+      "email_ph": "you@company.com",
+      "subject_ph": "Proyecto, consulta o colaboración",
+      "message_ph": "Describe brevemente objetivos, restricciones y cronograma.",
+      "send": "Enviar mensaje"
+    },
+    "connect": {
+      "title": "Mantengamos el contacto",
+      "body": "Ya sea validando una idea, escalando sistemas existentes o buscando una segunda opinión, con gusto colaboraré y aportaré próximos pasos claros.",
+      "findMe": "Encuéntrame en la red"
+    },
+    "info": {
+      "email": {
+        "title": "Correo",
+        "value": "hello@domiadi.com"
+      },
+      "location": {
+        "title": "Ubicación",
+        "value": "Disponible globalmente"
+      },
+      "response": {
+        "title": "Tiempo de respuesta",
+        "value": "Usualmente dentro de 24 horas"
+      }
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+	   
+    }
+  },
+  "footer": {
+    "engineered": "Desarrollado con",
+    "rights": "Todos los derechos reservados."
+  },
+  "error404": {
+    "title": "404 - Página no encontrada | Domi Adiwijaya",
+    "h2": "Página no encontrada",
+    "p": "La página que buscas no existe o fue movida.",
+    "goHome": "Volver al inicio",
+    "links": "O prueba con uno de estos enlaces:"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Domi Adiwijaya",
+    "description": "Tingali portopolio, wawasan téknis, sarta proyék inovatif ti Domi Adiwijaya, profésional nu mikaresep Téknologi & Homelab."
+  },
+  "nav": {
+    "home": "Tepas",
+    "about": "Ihwal",
+    "skills": "Kaahlian",
+    "services": "Jasa",
+    "contact": "Kontak",
+    "openMenu": "Buka ménu navigasi"
+  },
+  "hero": {
+    "alt": "Domi Adiwijaya",
+    "title": {
+      "1": "Domi",
+      "2": "Adiwijaya"
+    },
+    "tagline": "Insinyur Sistem & Homelab",
+    "blurb": "Abdi ngarancang sarta nganteurkeun sistem anu bisa dipercaya. Ti arsitéktur homelab nepi ka otomatisasi tingkat produksi, abdi ngarobah rupa-rupa watesan kompléks jadi solusi anu éndah tur tangguh.",
+    "cta": "Tingali Karya Abdi"
+  },
+  "about": {
+    "h2": {
+      "1": "Ihwal Nu",
+      "2": "Abdi"
+    },
+    "lead": "Abdi kapicu pikeun ngajadikeun téknologi leuwih miboga mangpaat, boh dina homelab nu dikadalikeun boh dina ngabantu batur ngabéréskeun tantangan nyata anu rumit.",
+    "p1": "Abdi Domi. Saurang teknolog ti baheula, nu ngarobah panasaran mimiti jadi prakték disiplin pikeun ngarancang sistem anu ngaréngsékeun masalah nyata nu boga pangaruh.",
+    "p2": "Homelab abdi janten lingkungan R&D nu fokus: nguji stres, ngahaja ngarecah, tuluy nguatkeun gagasan, teras diproduksikeun lamun geus kabuktian tahan banting.",
+    "p3": "Lian ti konfigurasi jeung otomatisasi, abdi ngadistilasi jeung ngabagikeun pangalaman sangkan batur bisa ngaliwatan kakompleksan leuwih gancang. Momen nalika sagalana nyambung sarta jalan mulus téh tujuanana.",
+    "nutshell": "Ringkesna",
+    "bullets": {
+      "1": "R&D Homelab, panyalur masalah pragmatis",
+      "2": "Praktisi otomatisasi heula (automation-first)",
+      "3": "Kontributor open-source",
+      "4": "Teu eureun diajar, panasaran ti mimiti"
+    },
+    "highlights": {
+      "innovation": {
+        "title": "Inovasi Téknologi",
+        "description": "Abdi nalungtik téknologi anyar sarta ngarancang solusi anu éndah, skala, sarta mantep pikeun masalah anu penting."
+      },
+      "homelab": {
+        "title": "R&D Homelab",
+        "description": "Lingkungan nu dikadalikeun pikeun nguji stres, nguatkeun, sarta mroduksi ide saméméh nampa lalulintas nyata."
+      },
+      "automation": {
+        "title": "Otomatisasi Heula",
+        "description": "Naon waé anu diulang kaping dua jadi calon otomatisasi anu ajeg jeung idempotén."
+      },
+      "sharing": {
+        "title": "Babagi Élmu",
+        "description": "Abdi ngadistilasi palajaran jadi dokumén, démo, jeung cariosan pikeun ngagancangkeun diajar tim."
+      }
+    }
+  },
+  "skills": {
+    "h2": {
+      "1": "Nu Abdi",
+      "2": "Paké"
+    },
+    "lead": "Ranté pakakas anu dipaké pikeun ngarancang, ngotomatiskan, jeung ngoperasikeun sistem anu tetep éndah dina beban sarta bisa diprediksi nalika aya kagagalan.",
+    "categories": {
+      "infrastructure": {
+        "title": "Infrastruktur & Cloud",
+        "items": {
+          "virtualization": "Virtualisasi",
+          "containerOrchestration": "Orkestrasi Konténer",
+          "cloudPlatforms": "Platform Cloud",
+          "networkDesign": "Desain Jaringan",
+          "infrastructureAsCode": "Infrastruktur minangka Kode"
+        }
+      },
+      "systemAdministration": {
+        "title": "Administrasi Sistem",
+        "items": {
+          "linuxAdministration": "Administrasi Linux",
+          "automationScripts": "Skrip Otomatisasi",
+          "storageSolutions": "Solusi Panyimpenan",
+          "monitoringLogging": "Monitoring & Logging",
+          "backupRecovery": "Cadangan & Pamulihan"
+        }
+      },
+      "security": {
+        "title": "Kaamanan & Jaringan",
+        "items": {
+          "networkSecurity": "Kaamanan Jaringan",
+          "firewallManagement": "Pangaturan Firewall",
+          "vpnSetup": "Setélan VPN",
+          "accessControl": "Kontrol Aksés",
+          "sslTlsConfiguration": "Konfigurasi SSL/TLS"
+        }
+      }
+    },
+    "tail": {
+      "title": "Ulah Eureun Diajar",
+      "body": "Téknologi terus mekar unggal dinten. Abdi ngajalankeun éksperimén teras-terasan pikeun nguji pakakas anyar, ngagosok prakték, sarta nganteurkeun hasil anu leuwih hadé jeung bisa diukur."
+    }
+  },
+  "services": {
+    "h2": {
+      "1": "Kumaha Abdi Bisa",
+      "2": "Mantuan"
+    },
+    "lead": "Ti infrastruktur end-to-end nepi ka hiji pancén ngegel anu rék dipiceun tina daptar, abdi nganteurkeun solusi anu pragmatis jeung awét.",
+    "cards": {
+      "homelab": {
+        "title": "Setélan Homelab",
+        "description": "Ngadesain jeung ngajalankeun homelab pikeun diajar, staging, atawa self-hosting, dumasar kana jaringan, virtualisasi, jeung panyimpenan anu tangguh.",
+        "features": {
+          "1": "Rékóméndasi hardware",
+          "2": "Topologi jaringan",
+          "3": "Setélan virtualisasi",
+          "4": "Arsitéktur panyimpenan",
+          "5": "Catu daya & kakuatan tahan gangguan"
+        }
+      },
+      "cloud": {
+        "title": "Migrasi Cloud",
+        "description": "Ngurangan résiko nalika pindah ka cloud kalayan rencana anu pragmatis, sadar biaya, sarta target arsitéktur anu pas kabutuh.",
+        "features": {
+          "1": "Stratégi migrasi",
+          "2": "Optimasi biaya",
+          "3": "Panyaluyuan kinerja",
+          "4": "Desain arsitéktur",
+          "5": "Setélan kapatuhan"
+        }
+      },
+      "security": {
+        "title": "Setélan Kaamanan",
+        "description": "Ngadegkeun kontrol kaamanan anu réalistis pikeun nurunkeun résiko sacara nyata tanpa ngalambatkeun padamelan.",
+        "features": {
+          "1": "Kaamanan jaringan",
+          "2": "Kontrol aksés",
+          "3": "Setélan firewall",
+          "4": "Audit kaamanan",
+          "5": "Pindai kerentanan"
+        }
+      },
+      "automation": {
+        "title": "Otomatisasi Nu Reliabel",
+        "description": "Miceun pagawéan nu ngabehakeun ku otomatisasi anu kuat sarta idempotén supaya anjeun tiasa fokus kana hasil anu penting.",
+        "features": {
+          "1": "Skrip kustom",
+          "2": "Otomatisasi prosés",
+          "3": "Pipa CI/CD",
+          "4": "Infrastruktur minangka kode",
+          "5": "Optimasi alur kerja"
+        }
+      },
+      "monitoring": {
+        "title": "Monitoring & Peringatan",
+        "description": "Méré panempoan nu tiasa dilaksanakeun jeung sinyal dini di sakuliah sistem, saméméh pangguna ngarasa pangaruhna.",
+        "features": {
+          "1": "Monitoring sistem",
+          "2": "Peringatan calakan",
+          "3": "Dasbor kinerja",
+          "4": "Pamariksaan kasehatan",
+          "5": "Aggrégasi log"
+        }
+      },
+      "data": {
+        "title": "Data & Cadangan",
+        "description": "Ngajaga data krusial ku cadangan anu tangguh, pamulihan gancang, sarta tata laksana siklus hirup anu disiplin.",
+        "features": {
+          "1": "Stratégi cadangan",
+          "2": "Pamulihan musibah",
+          "3": "Migrasi data",
+          "4": "Optimasi panyimpenan",
+          "5": "Arsip data"
+        }
+      }
+    },
+    "tail": {
+      "title": "Perlu Nu Beda?",
+      "body": "Unggal kontéks téh béda jeung jarang cocog ku citak. Béjakeun kabutuhan anjeun, urang rarancang solusi anu sajalan jeung tujuan, watesan, jeung jadwal.",
+      "cta": "Hayu Ngobrol"
+    }
+  },
+  "contact": {
+    "h2": {
+      "1": "Ngahubungi",
+      "2": "Abdi"
+    },
+    "lead": "Gaduh inisiatif anu rék dirarancang atawa rohangan masalah anu rék dipaluruh? Mangga ngahubungi, abdi badé ngartos tujuan anjeun sarta ngajelaskeun léngkah anu pragmatis.",
+    "drop": {
+      "title": "Kirim Pesen",
+      "body": "Paké formulir di handap atanapi kirim surélék—mana anu leuwih merenah. Unggal pesen bakal abdi baca."
+    },
+    "form": {
+      "name_label": "Nami *",
+      "email_label": "Surélék *",
+      "subject_label": "Jejer",
+      "message_label": "Pesen *",
+      "name_ph": "Nami lengkep anjeun",
+      "email_ph": "you@company.com",
+      "subject_ph": "Proyék, patalékan, atanapi kolaborasi",
+      "message_ph": "Gambarkeun singget tujuan, watesan, jeung jadwal.",
+      "send": "Kirim Pesen"
+    },
+    "connect": {
+      "title": "Hayu Nyambung",
+      "body": "Naha keur mastikeun konsép, ngaskalakeun sistem, atawa néangan pamadegan kadua, abdi siap ngabantuan jeung mapay léngkah salajengna anu écés.",
+      "findMe": "Panggihan Abdi Daring"
+    },
+    "info": {
+      "email": {
+        "title": "Surélék",
+        "value": "hello@domiadi.com"
+      },
+      "location": {
+        "title": "Lokasi",
+        "value": "Sayogi sakuliah dunya"
+      },
+      "response": {
+        "title": "Waktu Tanggapan",
+        "value": "Biasana dina 24 jam"
+      }
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "footer": {
+    "engineered": "Diarancang ku",
+    "rights": "Sagala hak dipiboga."
+  },
+  "error404": {
+    "title": "404 - Kaca Teu Kapanggih | Domi Adiwijaya",
+    "h2": "Kaca Teu Kapanggih",
+    "p": "Kaca anu anjeun teang teu aya atanapi parantos dipindahkeun.",
+    "goHome": "Balik ka Tepas",
+    "links": "Atanapi cobian salah sahiji tautan ieu:"
+  }
+}

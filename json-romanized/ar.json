@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Domi Adiwijaya",
+    "description": "Istakshif majmu'at al-a'mal, al-ru'a al-taqniyya, wa al-mashari' al-mubtakira li Domi Adiwijaya, muhibb mutakhassis fi al-taqniyya wa al-homelab."
+  },
+  "nav": {
+    "home": "Al-Bayt",
+    "about": "Hawli",
+    "skills": "Khibra",
+    "services": "Khidamat",
+    "contact": "Ittisal",
+    "openMenu": "Iftah qaimat al-tawjih"
+  },
+  "hero": {
+    "alt": "Domi Adiwijaya",
+    "title": {
+      "1": "Domi",
+      "2": "Adiwijaya"
+    },
+    "tagline": "Muhandis Nuzum wa Homelab",
+    "blurb": "Usammimu wa uqaddimu nuzuman mawthuqa. Min bunyat al-homelab ila al-automation bi-mustawa al-intaj, uhawwilu al-quyud al-muta'aqqida ila hulul rashiqa wa mutamassika.",
+    "cta": "Istakshif A'mali"
+  },
+  "about": {
+    "h2": {
+      "1": "Man",
+      "2": "Ana"
+    },
+    "lead": "Yahduni al-hirs 'ala tahsin al-taqniyya bi-ma'na haqiqi, sawa'an fi homelab muhaakam aw bi-musaa'adat al-akhareen 'ala hall al-tahaddiyat al-waqi'iyya al-muta'aqqida.",
+    "p1": "Ana Domi. Mundhu al-bidaya, hawwali al-fudul ila mumarasa munazzama li-tasmiym nuzum tahullu mushkilat muhimma fi al-'alam al-haqiqi.",
+    "p2": "Al-homelab 'indi yu'addu bi'a murakkaza lil-bahth wa al-tatwir: ukhadi'u al-afkar li-ikhtibarat al-daght, thumma u'ashshiduha wa uhawwiluha ila intaj idha thabatat qiwamatuha.",
+    "p3": "Fawqa al-tashkil wa al-automation, uwwaththiqu ma ata'allamuhu wa usharikuhu li-yatawajja al-akharun al-ta'aqud bisur'a akbar. Lahzat 'amal kulli shay' bikhiffa wa duqa hiya al-ghaya.",
+    "nutshell": "Bil-Ikhtisar",
+    "bullets": {
+      "1": "Bahth wa tatwir fi al-homelab, hallal mashakil baragmati",
+      "2": "Mumaaris yaj'alu al-automation awwalan",
+      "3": "Musahim fi al-masdar al-maftuh",
+      "4": "Talib da'im, fuduli bil-tab'"
+    },
+    "highlights": {
+      "innovation": {
+        "title": "Ibtikar Taqni",
+        "description": "Uqayyimu al-taqaniyat al-namiya wa u'arkhitu hululan rashiqa qabila lil-tawsi' li-mushkilat dhat athar."
+      },
+      "homelab": {
+        "title": "Bahth wa Tatwir al-Homelab",
+        "description": "Bi'a muhaakama ukhadi'u fiha al-afkar li-ikhtibarat al-daght, atashdiduha, thumma uhawwiluha ila intaj qabla muwajahat al-haraka al-haqiqiyya."
+      },
+      "automation": {
+        "title": "Automation Awwalan",
+        "description": "Kullu 'amalin yu'adu marratayn yusbihu murashahan li-automation mawthuqa idempotent."
+      },
+      "sharing": {
+        "title": "Musharaka al-Ma'rifa",
+        "description": "Ulalakhkhisu al-durusa ila watha'iq, demo, wa muhadharat li-ta'jil al-ta'allum 'abr al-firaq."
+      }
+    }
+  },
+  "skills": {
+    "h2": {
+      "1": "Bima",
+      "2": "A'mal"
+    },
+    "lead": "Silsilat al-adawat allati a'tamid 'alaiha li-tasmiym, automation, wa tashghil nuzum tabqa rashiqa tahta al-haml wa qabilatan lil-tanabu' 'inda al-ikhtilal.",
+    "categories": {
+      "infrastructure": {
+        "title": "Al-Bunya al-Tahtiyya wa al-Cloud",
+        "items": {
+          "virtualization": "Virtualization",
+          "containerOrchestration": "Container Orchestration",
+          "cloudPlatforms": "Manasat al-Cloud",
+          "networkDesign": "Tasmim al-Shabaka",
+          "infrastructureAsCode": "Infrastructure as Code"
+        }
+      },
+      "systemAdministration": {
+        "title": "Idarat al-Nizam",
+        "items": {
+          "linuxAdministration": "Idarat Linux",
+          "automationScripts": "Scripts al-Automation",
+          "storageSolutions": "Hulul al-Khazan",
+          "monitoringLogging": "Monitoring wa Logging",
+          "backupRecovery": "Backup wa Recovery"
+        }
+      },
+      "security": {
+        "title": "Al-Amn wa al-Shabakat",
+        "items": {
+          "networkSecurity": "Amn al-Shabaka",
+          "firewallManagement": "Idarat al-Firewall",
+          "vpnSetup": "Tarkib VPN",
+          "accessControl": "Dabt al-Wusul",
+          "sslTlsConfiguration": "Tashkil SSL/TLS"
+        }
+      }
+    },
+    "tail": {
+      "title": "La Tatawaqqaf 'an al-Ta'allum",
+      "body": "Al-taqniyya tatawarru kull yawm. Ujri tajarib mutawassila li-ikhtibar adawat jadida tahta al-daght, unaqqih mumarasati, wa uqaddim nata'ij afdal maqiyasan."
+    }
+  },
+  "services": {
+    "h2": {
+      "1": "Kayfa astati'",
+      "2": "al-Musa'ada"
+    },
+    "lead": "Min al-bunya al-tahtiyya min al-bidaya ila al-nihaya hatta tilka al-mihna al-mu'andida allati turid izalatha, uqaddim hululan baragmatiyya da'ima.",
+    "cards": {
+      "homelab": {
+        "title": "Tarkib al-Homelab",
+        "description": "Sammim wa ansher homelab muqassadan lil-ta'allum, al-tajriba, aw al-self-hosting, ma'a shabakat mutamassika, virtualization, wa khazan.",
+        "features": {
+          "1": "Tawsiyat al-hardware",
+          "2": "Topology al-shabaka",
+          "3": "Tarkib al-virtualization",
+          "4": "Mimariyat al-khazan",
+          "5": "Taqa wa muruna"
+        }
+      },
+      "cloud": {
+        "title": "Hijra ila al-Cloud",
+        "description": "Khatt baragmati mura' li-l-kulfa li-taqlil al-makhatir wa bina' mimar hadif fi al-cloud.",
+        "features": {
+          "1": "Istratijiyat al-hijra",
+          "2": "Tahsin al-taklifa",
+          "3": "Tanzhim al-ada'",
+          "4": "Tasmim al-mimariyya",
+          "5": "I'adad al-mu'tamada"
+        }
+      },
+      "security": {
+        "title": "Tarkib al-Amn",
+        "description": "Iqama dawabit amniyya baragmatiyya tuqallil al-makhatir biduni ibta' al-intajiyya.",
+        "features": {
+          "1": "Amn al-shabaka",
+          "2": "Dabt al-wusul",
+          "3": "Tarkib al-firewall",
+          "4": "Mudhiqaat amniyya",
+          "5": "Fahrs al-thugurat"
+        }
+      },
+      "automation": {
+        "title": "Automation Mawthuqa",
+        "description": "Iql al-'amal al-muta'awwid bi-automation qawi wa idempotent li-tatakarras 'alayhi thaqatan.",
+        "features": {
+          "1": "Scripts mukhassasa",
+          "2": "Automation al-'amaliyyat",
+          "3": "CI/CD pipelines",
+          "4": "Infrastructure as code",
+          "5": "Tayseer al-tadfiqat"
+        }
+      },
+      "monitoring": {
+        "title": "Monitoring wa Tanbihat",
+        "description": "Ru'ya amaliyya wa inthar mubakkir 'abr al-nuzum qabl an yash'ur al-mustakhdimun bi-ayy athar.",
+        "features": {
+          "1": "Monitoring al-nizam",
+          "2": "Tanbihat dhakiya",
+          "3": "Dashboards al-ada'",
+          "4": "Health checks",
+          "5": "Tajmi' al-sijillat"
+        }
+      },
+      "data": {
+        "title": "Al-Bayanat wa al-Nusakh al-Ihtiyatiyya",
+        "description": "Himayat al-bayanat al-hassasa bi-nusakh ihtiyatiyya murina wa isti'ada sari'a wa idarat 'umr al-bayanat.",
+        "features": {
+          "1": "Istratijiyat al-backup",
+          "2": "Disaster recovery",
+          "3": "Hijrat al-bayanat",
+          "4": "Tahsin al-khazan",
+          "5": "Arshafa al-bayanat"
+        }
+      }
+    },
+    "tail": {
+      "title": "Turid Shay'an Mukhtalifan?",
+      "body": "Al-siyaqat takhtalif wa al-qawalib la tanasib da'iman. Qul li ma tahtajuh, wa sanusammim hallan yatalamu ma'a ahdafik, hududik, wa al-awqat.",
+      "cta": "Hayya natahaddath"
+    }
+  },
+  "contact": {
+    "h2": {
+      "1": "Ittasil",
+      "2": "Bi"
+    },
+    "lead": "Hal ladayka mubadara li-tashkiliha aw mushkila turidu tafkiikaha? Tawasal, as'aa li-fahm ahdafik wa rasm tariq baragmati li-l-mudaqqaq.",
+    "drop": {
+      "title": "Irsil li Risala",
+      "body": "Istadim al-namudhaj al-muqaran aw arsil bariidan iliktruniyan; kullu tariq yunasibuk. Aqra'u kulla risala."
+    },
+    "form": {
+      "name_label": "Al-Ism *",
+      "email_label": "Al-Bariid al-Iliktruni *",
+      "subject_label": "Al-Mawdhu'",
+      "message_label": "Al-Risala *",
+      "name_ph": "Ismuk al-kamil",
+      "email_ph": "you@company.com",
+      "subject_ph": "Mashru', su'al, aw ta'awun",
+      "message_ph": "A'rd al-ahdaf, al-hudud, wa al-awqat bi-ikhtisar.",
+      "send": "Irsal al-Risala"
+    },
+    "connect": {
+      "title": "Hayya Natawasal",
+      "body": "Sawa'an kuntu tufakkir fi tawthiq mafhum, tawsi'at nizam, aw talib ra'y thanin, sa'akunu sa'idan bi-al-musaa'ada wa taqdim khutuwat wadihah.",
+      "findMe": "Ijidni Online"
+    },
+    "info": {
+      "email": {
+        "title": "Al-Bariid al-Iliktruni",
+        "value": "hello@domiadi.com"
+      },
+      "location": {
+        "title": "Al-Makan",
+        "value": "Mutaha hawla al-'alam"
+      },
+      "response": {
+        "title": "Waqt al-Radd",
+        "value": "Ghaliban dakhil 24 sa'a"
+      }
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "footer": {
+    "engineered": "Muhandasa bi",
+    "rights": "Jami' al-huquq mahfudha."
+  },
+  "error404": {
+    "title": "404 - Safha ghayr mawjudah | Domi Adiwijaya",
+    "h2": "Safha ghayr mawjudah",
+    "p": "Al-safha allati tabhathu 'anha ghayr mawjudah aw tam naqluha.",
+    "goHome": "Ila al-Bayt",
+    "links": "Aw jarrib ahad hadhihi al-rawabit:"
+  }
+}

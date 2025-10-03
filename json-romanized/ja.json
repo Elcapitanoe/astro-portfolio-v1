@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Domi Adiwijaya",
+    "description": "Tekku to homurabo no purofesshonaru enthujiiasuto, Domi Adiwijaya no poriforio, gijutsu insaito, oyobi kakushin-teki na purojekuto o go-ran kudasai."
+  },
+  "nav": {
+    "home": "Homu",
+    "about": "Jikoshokai",
+    "skills": "Senmon",
+    "services": "Sabisu",
+    "contact": "Otoiawase",
+    "openMenu": "Nabigeshon menyu o hiraku"
+  },
+  "hero": {
+    "alt": "Domi Adiwijaya",
+    "title": {
+      "1": "Domi",
+      "2": "Adiwijaya"
+    },
+    "tagline": "Shisutemu to homurabo enjinia",
+    "blurb": "Watashi wa shinrai dekiru shisutemu o sekkei shi teikyo shimasu. Homurabo a-kitekucha kara seisan-ki no otomeshon made, fukuzatsu na yokken o yuga de kyoyu na kaiketsu ni shite todokemasu.",
+    "cta": "Watashi no shigoto o miru"
+  },
+  "about": {
+    "h2": {
+      "1": "Watashi ni",
+      "2": "Tsuite"
+    },
+    "lead": "Kontororu sareta homurabo demo, genba no fukuzatsu na kadai no kaiketsu demo, gijutsu o imi aru mono ni yoku suru koto o mezashite imasu.",
+    "p1": "Watashi wa Domi desu. Nagai aida, teknorojisuto to shite no kyoumi o, jissai no seikai de yakudatsu shisutemu sekkei no kisoku e to migakiagete kimashita.",
+    "p2": "Watashi no homurabo wa shuchu shita R&D no kankyo desu. Iden o tesuto de koshi, toki ni aete kowashi, kyoka shi, jissho sareta mono o seisan-ki ni nobashimasu.",
+    "p3": "Kitei ya otomeshon o koete, mananda koto o bunsho ya demo de katachi ni shite kyoyu shi, hoka no hito ga fukuzatsu-sei o hayaku navi-geito dekiru yō ni shimasu. Subete ga kanpeki ni ugoki dasu shunkan ga mokuhyo desu.",
+    "nutshell": "Kanketsu ni ieba",
+    "bullets": {
+      "1": "Homurabo R&D, jissen-teki na mondai kaiketsusha",
+      "2": "Otomeshon daiichi no jissenka",
+      "3": "O-pun so-su no kontribyuta",
+      "4": "Tsune ni manabu hito, kihonteki ni koukishin ousei"
+    },
+    "highlights": {
+      "innovation": {
+        "title": "Tekku inobeshon",
+        "description": "Shinshutsu no gijutsu o hyoka shi, yuga de sukera-buru na kaiketsu o sekkei shite, jūdaina mondai ni taisho shimasu."
+      },
+      "homelab": {
+        "title": "Homurabo R&D",
+        "description": "Jissou mae ni a-idea o tesuto, kyoka, seihin-ka suru tame no kontororu sareta kankyo desu."
+      },
+      "automation": {
+        "title": "Otomeshon daiichi",
+        "description": "Onaji sagyo o 2-kai kurikaeshitara, sore wa shinrai dekiru idempotento na otomeshon no taisho desu."
+      },
+      "sharing": {
+        "title": "Chishiki kyouyuu",
+        "description": "Mananda koto o bunsho, demo, tokuhon ni seiri shi, chimu no gakushu o sokushin shimasu."
+      }
+    }
+  },
+  "skills": {
+    "h2": {
+      "1": "Watashi ga atsukau",
+      "2": "Shudan"
+    },
+    "lead": "Fuerodo ni mo shippai ji ni mo yowakunai shisutemu o sekkei, otomeshon, un'ei suru tame no tsu-ru chein desu.",
+    "categories": {
+      "infrastructure": {
+        "title": "Infura to kuraudo",
+        "items": {
+          "virtualization": "Kasouka",
+          "containerOrchestration": "Kontena okesutore-shon",
+          "cloudPlatforms": "Kuraudo purafo-mu",
+          "networkDesign": "Nettowaku dezain",
+          "infrastructureAsCode": "Kodo toshite no infura (IaC)"
+        }
+      },
+      "systemAdministration": {
+        "title": "Shisutemu adominisutore-shon",
+        "items": {
+          "linuxAdministration": "Linux adominisuteishon",
+          "automationScripts": "Otomeshon sukuri-pu",
+          "storageSolutions": "Sutore-ji soriyu-shon",
+          "monitoringLogging": "Monitaringu to roggingu",
+          "backupRecovery": "Bakkappu to rikabari"
+        }
+      },
+      "security": {
+        "title": "Seikyuriti to nettowakingu",
+        "items": {
+          "networkSecurity": "Nettowaku seikyuriti",
+          "firewallManagement": "Faia-uo-ru manajimento",
+          "vpnSetup": "VPN settoappu",
+          "accessControl": "Akusesu kontororu",
+          "sslTlsConfiguration": "SSL/TLS konfigyureshon"
+        }
+      }
+    },
+    "tail": {
+      "title": "Manabi o yamenaide",
+      "body": "Gijutsu wa hibi shinka shimasu. Watashi wa tsune ni shinken o tsuzuke, atarashii tsu-ru o tesuto shi, jitsumu o migaki, kekka o meikakuka shimasu."
+    }
+  },
+  "services": {
+    "h2": {
+      "1": "Watashi ni dekiru",
+      "2": "Otesudai"
+    },
+    "lead": "End to end no infura kara, kono ichibu no mendouna sagyo made, jissen-teki de kyoka na kaiketsu o teikyo shimasu.",
+    "cards": {
+      "homelab": {
+        "title": "Homurabo settoappu",
+        "description": "Resilien-su no aru nettowaku, kasouka, sutore-ji o kiso to shita, gakushu, suteeji, self-hosting ni tekisuru homurabo o sekkei to deploy shimasu.",
+        "features": {
+          "1": "Hadoea no osusume",
+          "2": "Nettowaku toporoji",
+          "3": "Kasouka settei",
+          "4": "Sutore-ji a-kitekucha",
+          "5": "Denryoku to resilience"
+        }
+      },
+      "cloud": {
+        "title": "Kuraudo migureshon",
+        "description": "Genjitsu-teki de kosuto o ishiki shita keikaku to tekisetsu na mokuhyo a-kitekucha de, kuraudo e no idou no risuku o sakugen shimasu.",
+        "features": {
+          "1": "Migureshon senryaku",
+          "2": "Kosuto optimizeshon",
+          "3": "Pafomansu tuning",
+          "4": "A-kitekucha dezain",
+          "5": "Kompuraiansu settei"
+        }
+      },
+      "security": {
+        "title": "Seikyuriti settei",
+        "description": "Delivery o osoku sezu ni, jittai-teki ni risuku o herasu seikyuriti kontororu o seichi shimasu.",
+        "features": {
+          "1": "Nettowaku seikyuriti",
+          "2": "Akusesu kontororu",
+          "3": "Faia-uo-ru settei",
+          "4": "Seikyuriti oditto",
+          "5": "Vulnerabiliti scan"
+        }
+      },
+      "automation": {
+        "title": "Shinrai dekiru otomeshon",
+        "description": "Toil o haisyo shi, taisetsu na kekka ni shusho dekiru you, kyoka de idempotento na otomeshon o teikyo shimasu.",
+        "features": {
+          "1": "Kasutamu sukuri-pu",
+          "2": "Purosesu otomeshon",
+          "3": "CI/CD painrain",
+          "4": "Infura asu ko-do",
+          "5": "Wakufuro- optimizeshon"
+        }
+      },
+      "monitoring": {
+        "title": "Monitaringu to a-ra-to",
+        "description": "Yuza ga eikyo o kanjiru zutto mae ni, shisutemu no jokyo o katsudotekini haaku shimasu.",
+        "features": {
+          "1": "Shisutemu monitaringu",
+          "2": "Sumato a-ra-to",
+          "3": "Pafomansu dasubodo",
+          "4": "Herusu chekku",
+          "5": "Rogu to so-gou"
+        }
+      },
+      "data": {
+        "title": "De-ta to bakkappu",
+        "description": "Juyo na de-ta o kyoka na bakkappu, hayai kaifuku, seikatsu saikuru no kanri de mamorimasu.",
+        "features": {
+          "1": "Bakkappu senryaku",
+          "2": "Disasuta rikabari",
+          "3": "De-ta migureshon",
+          "4": "Sutore-ji optimizeshon",
+          "5": "De-ta a-kaivingu"
+        }
+      }
+    },
+    "tail": {
+      "title": "Hoka no goyobo wa arimasu ka?",
+      "body": "Basho mo bunmyaku mo samazama desu. Hitsuyou na koto o oshiete kudasai. Mokuhyo, seiyaku, sukeruju ni awasete, tekisetsu na kaiketsu o issho ni dezain shimasu.",
+      "cta": "Hanashimashou"
+    }
+  },
+  "contact": {
+    "h2": {
+      "1": "Otoiawase",
+      "2": "No go-annai"
+    },
+    "lead": "Scope o kime-tai purojekuto ya, himotsuku beki mondai ga arimasu ka? Mokuhyo o rikai shi, jissai-teki na furō o teian shimasu.",
+    "drop": {
+      "title": "Messe-ji o okutte kudasai",
+      "body": "Fomu mata wa e-me-ru, tsukaiyasui ho o erande kudasai. Subete no messe-ji ni me o tooshimasu."
+    },
+    "form": {
+      "name_label": "Namae *",
+      "email_label": "E-mail *",
+      "subject_label": "Kenmei",
+      "message_label": "Messe-ji *",
+      "name_ph": "Sei to mei",
+      "email_ph": "you@company.com",
+      "subject_ph": "Purojekuto, shitsumon, mata wa kyoryoku",
+      "message_ph": "Mokuhyo, seiyaku, sukeruju o kanketsu ni oshiete kudasai.",
+      "send": "Messe-ji o okuru"
+    },
+    "connect": {
+      "title": "Tsunagarimashou",
+      "body": "Kosei shien, sukera, mata wa dainintei ga hitsuyou na baai mo, tsugi no suteppu o meikaku ni shite go-annai shimasu.",
+      "findMe": "Onrain de mitsukeru"
+    },
+    "info": {
+      "email": {
+        "title": "E-mail",
+        "value": "hello@domiadi.com"
+      },
+      "location": {
+        "title": "Basho",
+        "value": "Sekai-teki ni taiou"
+      },
+      "response": {
+        "title": "Henjin jikan",
+        "value": "Tsujo 24-jikan inai"
+      }
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "footer": {
+    "engineered": "Kosei ni tsukatta",
+    "rights": "Zenken hogo sarete imasu."
+  },
+  "error404": {
+    "title": "404 - Peji ga mitsukarimasen | Domi Adiwijaya",
+    "h2": "Peji ga mitsukarimasen",
+    "p": "O-sagashi no peji wa sonzai shinai ka, iten saremashita.",
+    "goHome": "Homu e modoru",
+    "links": "Mata wa tsugi no rinku o o-tameshi kudasai:"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Domi Adiwijaya",
+    "description": "Telusuri portofolio, wawasan teknis, lan proyek-proyek inovatifipun Domi Adiwijaya, satunggaling profesional ing bidang Teknologi lan Homelab."
+  },
+  "nav": {
+    "home": "Ngajeng",
+    "about": "Babagan",
+    "skills": "Kaprigelan",
+    "services": "Layanan",
+    "contact": "Sesambungan",
+    "openMenu": "Mbukak Menu Navigasi"
+  },
+  "hero": {
+    "alt": "Domi Adiwijaya",
+    "title": {
+      "1": "Domi",
+      "2": "Adiwijaya"
+    },
+    "tagline": "Insinyur Sistem lan Homelab",
+    "blurb": "Kula ngrancang lan nyediyani sistem ingkang saged dipunpitados. Saking arsitektur homelab dumugi otomasi tingkat produksi, kula nerjemahaken watesan rumit dados solusi ingkang endah lan kiyat.",
+    "cta": "Telusuri Karyanipun Kula"
+  },
+  "about": {
+    "h2": {
+      "1": "Menapa ingkang",
+      "2": "Kula Tekuni"
+    },
+    "lead": "Kula kasemangatan nginggilaken teknologi supados langkung gadhah teges, ing homelab ingkang kadhapuk utawi kanthi mbiyantu tiyang sanes ngrampungaken tantangan rumit ing jagad nyata.",
+    "p1": "Kula Domi. Saking penasaran wiwit alit, kula ngembangaken dados laku disiplin kang ngrancang sistem kang saged nyumadakake masalah donya nyata ingkang wigati.",
+    "p2": "Homelab kula dados papan R&D sing fokus: kula uji-stres, kadhang kanthi sengaja ngrusak kanggé sinau, lajeng ngiyataken lan nglempengaken gagasan sadèrèngipun dipun-ginakaken ing produksi.",
+    "p3": "Saliyane pangaturan lan otomasi, piwulang ingkang kula sinaoni tansah kula tulis lan kula bagi supados tiyang sanes saged ngliwati kompleksitas kanthi langkung cepet. Nalika sedaya kasambung lan mlaku kanthi prasaja, punika inggih dados tujuanipun.",
+    "nutshell": "Sakringkesipun",
+    "bullets": {
+      "1": "R&D Homelab, panyingkiri masalah kanthi pragmatis",
+      "2": "Praktisi kanthi prioritas otomasi",
+      "3": "Kontributor open-source",
+      "4": "Tansah sinau, gadhah rasa penasaran saking wiwitan"
+    },
+    "highlights": {
+      "innovation": {
+        "title": "Inovasi Teknologi",
+        "description": "Kula ngevaluasi teknologi enggal lan ngrancang solusi ingkang éndah, saged ngeskalasi, lan trep kanggé masalah wigati."
+      },
+      "homelab": {
+        "title": "R&D Homelab",
+        "description": "Lingkungan kadhapuk kanggé uji-stres, ngiyataken, lan nglempengaken gagasan sadèrèngipun ngadhepi lalu lintas nyata."
+      },
+      "automation": {
+        "title": "Otomasi Minangka Prioritas",
+        "description": "Menawi samukawis dipunbaleni kaping kalih, dados calon otomasi ingkang kiyat lan idempoten."
+      },
+      "sharing": {
+        "title": "Pambageyan Kawruh",
+        "description": "Piwulang kula dipun-distil dados dokumen, demo, lan presentasi supados sinau tim saged langkung cepet."
+      }
+    }
+  },
+  "skills": {
+    "h2": {
+      "1": "Menapa ingkang Kula",
+      "2": "Ginakaken"
+    },
+    "lead": "Ranté piranti kang kula andelakaké kanggé ngrancang, ngotomasi, lan ngoperasikaké sistem supados tetep éndah nalika kabebanan lan tetep kinira sanadyan ana gagal.",
+    "categories": {
+      "infrastructure": {
+        "title": "Infrastruktur & Awan",
+        "items": {
+          "virtualization": "Virtualisasi",
+          "containerOrchestration": "Orkestrasi Kontainer",
+          "cloudPlatforms": "Platform Awan",
+          "networkDesign": "Rancang Jaringan",
+          "infrastructureAsCode": "Infrastruktur minangka Kode"
+        }
+      },
+      "systemAdministration": {
+        "title": "Administrasi Sistem",
+        "items": {
+          "linuxAdministration": "Administrasi Linux",
+          "automationScripts": "Skrip Otomasi",
+          "storageSolutions": "Solusi Panyimpenan",
+          "monitoringLogging": "Pangawasan & Pencatatan Log",
+          "backupRecovery": "Serep & Pamulihan"
+        }
+      },
+      "security": {
+        "title": "Keamanan & Jaringan",
+        "items": {
+          "networkSecurity": "Keamanan Jaringan",
+          "firewallManagement": "Pangaturan Firewall",
+          "vpnSetup": "Panyetelan VPN",
+          "accessControl": "Kontrol Akses",
+          "sslTlsConfiguration": "Konfigurasi SSL/TLS"
+        }
+      }
+    },
+    "tail": {
+      "title": "Mboten Kendhat Sinau",
+      "body": "Teknologi owah saben dinten. Kula mlampahaken eksperimen terusan kanggé uji-stres piranti anyar, ngresiki praktik, lan ngasilaken asil ingkang saged diukur kanthi langkung sae."
+    }
+  },
+  "services": {
+    "h2": {
+      "1": "Kados Pundi Kula",
+      "2": "Saged Mbiyantu"
+    },
+    "lead": "Saking infrastruktur end-to-end dumugi tugas sakedhik nanging ngganggu, kula nyediyani solusi pragmatis lan awet.",
+    "cards": {
+      "homelab": {
+        "title": "Pangaturan Homelab",
+        "description": "Ngrancang lan ngedegaké homelab kanggé sinau, staging, utawi self-hosting, kanthi dhasar jaringan, virtualisasi, lan panyimpenan ingkang kiyat.",
+        "features": {
+          "1": "Rekomendasi piranti keras",
+          "2": "Topologi jaringan",
+          "3": "Panyetelan virtualisasi",
+          "4": "Arsitektur panyimpenan",
+          "5": "Daya lan ketahanan"
+        }
+      },
+      "cloud": {
+        "title": "Migrasi Cloud",
+        "description": "Ngrèdikso perpindahan menyang awan kanthi rencana pragmatis lan sadar biaya, lan arsitektur tujuan sing pas kabutuhan.",
+        "features": {
+          "1": "Strategi migrasi",
+          "2": "Optimasi biaya",
+          "3": "Pangaturan kinerja",
+          "4": "Desain arsitektur",
+          "5": "Pangaturan kepatuhan"
+        }
+      },
+      "security": {
+        "title": "Pangaturan Keamanan",
+        "description": "Ngetrapake kontrol keamanan pragmatis sing ngurangi risiko kanthi nyata tanpa ngalonake pangiriman.",
+        "features": {
+          "1": "Keamanan jaringan",
+          "2": "Kontrol akses",
+          "3": "Panyetelan firewall",
+          "4": "Audit keamanan",
+          "5": "Pindai kerentanan"
+        }
+      },
+      "automation": {
+        "title": "Otomasi sing Kiyat",
+        "description": "Ngilangi pakaryan bola-bali kanthi otomasi kiyat lan idempoten, supados panjenengan saged fokus ing asil ingkang wigati.",
+        "features": {
+          "1": "Skrip khusus",
+          "2": "Otomasi proses",
+          "3": "Pipa CI/CD",
+          "4": "Infrastruktur minangka kode",
+          "5": "Optimasi alur kerja"
+        }
+      },
+      "monitoring": {
+        "title": "Pangawasan & Peringatan",
+        "description": "Nggayuh visibilitas lan sinyal awal ing sakabehing sistem, sadurunge panganggo rumangsa pengaruhipun.",
+        "features": {
+          "1": "Pangawasan sistem",
+          "2": "Peringatan cerdas",
+          "3": "Dasbor kinerja",
+          "4": "Priksa kesehatan",
+          "5": "Agregasi log"
+        }
+      },
+      "data": {
+        "title": "Data & Serep",
+        "description": "Ngreksa data kritis kanthi serep kiyat, pamulihan cepet, lan manajemen siklus urip disiplin.",
+        "features": {
+          "1": "Strategi serep",
+          "2": "Pamulihan bencana",
+          "3": "Migrasi data",
+          "4": "Optimasi panyimpenan",
+          "5": "Arsip data"
+        }
+      }
+    },
+    "tail": {
+      "title": "Perlu Sing Beda?",
+      "body": "Konteks bénten-bénten, cithakan asring boten trep. Sumangga aturaken kabutuhan panjenengan, badhe kita rancang solusi ingkang selaras kaliyan tujuan, watesan, lan linimasa.",
+      "cta": "Sumangga rembugan"
+    }
+  },
+  "contact": {
+    "h2": {
+      "1": "Sesambung",
+      "2": "Kaliyan Kula"
+    },
+    "lead": "Gadhah inisiatif kanggé dipunukur utawi papan masalah kanggé dipunjlentrehaken? Sumangga nyerat, kula kersa mangertos gegayuhan panjenengan lan nyawisaken dalan pragmatis kanggé maju.",
+    "drop": {
+      "title": "Kintun Pesen",
+      "body": "Gunakna formulir ing ngandhap menika utawi kintun e-mail, punapa kemawon ingkang langkung trep. Kula maos saben layang."
+    },
+    "form": {
+      "name_label": "Asma *",
+      "email_label": "E-mail *",
+      "subject_label": "Bab",
+      "message_label": "Pesen *",
+      "name_ph": "Asma pepak panjenengan",
+      "email_ph": "you@company.com",
+      "subject_ph": "Proyek, pitakon, utawi kolaborasi",
+      "message_ph": "Papari cekak tujuwan, watesan, lan linimasa.",
+      "send": "Kintun Pesen"
+    },
+    "connect": {
+      "title": "Sumangga Sesambung",
+      "body": "Menapa panjenengan ngujicoba konsep, ngeskalasi sistem ingkang sampun wonten, utawi mbutuhaken pamanggih kaping kalih, kula siyap sesarengan lan maringi langkah-langkah cetha sabanjuré.",
+      "findMe": "Temokake Kula ing Daring"
+    },
+    "info": {
+      "email": {
+        "title": "E-mail",
+        "value": "hello@domiadi.com"
+      },
+      "location": {
+        "title": "Papan",
+        "value": "Kasedhiya saindenging jagad"
+      },
+      "response": {
+        "title": "Wektu Wangsulan",
+        "value": "Biasanipun sajroning 24 jam"
+      }
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "footer": {
+    "engineered": "Dipunrekayasa nganggo",
+    "rights": "Kabeh hak dipunlindhungi."
+  },
+  "error404": {
+    "title": "404 - Kaca Boten Kapanggih | Domi Adiwijaya",
+    "h2": "Kaca Boten Kapanggih",
+    "p": "Kaca ingkang panjenengan telusuri boten wonten utawi sampun dipunpindhah.",
+    "goHome": "Wangsul Ngajeng",
+    "links": "Utawi cobi salah satunggal pranala menika:"
+  }
+}

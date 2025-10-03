@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Domi Adiwijaya",
+    "description": "Tansuo Domi Adiwijaya de zuopin ji, jishu renshi, ji chuangxin xiangmu; ta shi yi ming zhuanye de keji yu jiating shiyanshi (homelab) aihao zhe."
+  },
+  "nav": {
+    "home": "Shouye",
+    "about": "Guanyu",
+    "skills": "Zhuanye",
+    "services": "Fuwu",
+    "contact": "Lianxi",
+    "openMenu": "Dakai daohang caidan"
+  },
+  "hero": {
+    "alt": "Domi Adiwijaya",
+    "title": {
+      "1": "Domi",
+      "2": "Adiwijaya"
+    },
+    "tagline": "Xitong yu jiating shiyanshi gongchengshi",
+    "blurb": "Wo sheji bing jiaofu kekao de xitong. Cong jiating shiyanshi jiegou dao shengchan ji zidonghua, wo jiang fuza de xianzhi zhuanhua wei youya er jianren de jiejue fang'an.",
+    "cta": "Liaojie wo de gongzuo"
+  },
+  "about": {
+    "h2": {
+      "1": "Wo de",
+      "2": "Jianjie"
+    },
+    "lead": "Wo yi cujin keji shixian geng you yiyi de gaishan wei dongli, wulun shi zai ke kongzhi de jiating shiyanshi, haishi bangzhu taren jiejue fuzade shijie tiaozhan.",
+    "p1": "Wo shi Domi. Zuo wei yi wei zhongshen keji ren, wo jiang zaoqi de haoqi zhuanhua wei you jilu de shijian, sheji neng jiejue zhongyao shijie wenti de xitong.",
+    "p2": "Wo de jiating shiyanshi shi yi ge zhuanzhu de yanfa huanjing: wo zuo yali ceshi, guyi dapo bing qianghua linian, ranhou jiang jing zhengming jianren de shexiang shengchanhua.",
+    "p3": "Chaochu peizhi yu zidonghua, wo ba suo xue biancheng guifan bing fenxiang, rang taren neng geng kuai yingdui fuza xing. Yiqie daka, shunli yunxing de shunjian jiu shi mubiao.",
+    "nutshell": "Jianyao zongjie",
+    "bullets": {
+      "1": "Jiating shiyanshi yanfa, zhongshi shiji jiejue wenti",
+      "2": "Zidonghua youxian de shijianzhe",
+      "3": "Kaifangyuan gongxianzhe",
+      "4": "Changxuezhe, tianxing haoqi"
+    },
+    "highlights": {
+      "innovation": {
+        "title": "Keji chuangxin",
+        "description": "Wo pinggu xinxing jishu, sheji youya ke kuorong de jiejue fang'an, yongyu jiejue zhongyao wenti."
+      },
+      "homelab": {
+        "title": "Jiating shiyanshi yanfa",
+        "description": "Yi ge ke kongzhi de huanjing, zai jieshou shiji jiaotong qian, yonglai yali ceshi, qianghua, bing shengchanhua linian."
+      },
+      "automation": {
+        "title": "Zidonghua youxian",
+        "description": "Renhe chongfu liangci de gongzuo dou ying dang chengwei kekao, dengjia de zidonghua duixiang."
+      },
+      "sharing": {
+        "title": "Zhishi fenxiang",
+        "description": "Wo jiang suode jingyan jianhua wei wendang, shiyan he yanjiang, jiakuai tuandui xuexi."
+      }
+    }
+  },
+  "skills": {
+    "h2": {
+      "1": "Wo changyong",
+      "2": "Gongju"
+    },
+    "lead": "Zhe shi wo yilai de gongju lian, yongyu sheji, zidonghua he yunyin xitong; zai fuzai xia reng youya, zai guzhang shi ke yuce.",
+    "categories": {
+      "infrastructure": {
+        "title": "Jichu sheshi yu yunjisuan",
+        "items": {
+          "virtualization": "Xunihua",
+          "containerOrchestration": "Rongqi diaodu",
+          "cloudPlatforms": "Yun pingtai",
+          "networkDesign": "Wangluo sheji",
+          "infrastructureAsCode": "Jichu sheshi jidaima"
+        }
+      },
+      "systemAdministration": {
+        "title": "Xitong guanli",
+        "items": {
+          "linuxAdministration": "Linux guanli",
+          "automationScripts": "Zidonghua jiaoben",
+          "storageSolutions": "Cunchu jiejue fang'an",
+          "monitoringLogging": "Jiankong yu rizhi",
+          "backupRecovery": "Beifen yu huifu"
+        }
+      },
+      "security": {
+        "title": "Anquan yu wangluo",
+        "items": {
+          "networkSecurity": "Wangluo anquan",
+          "firewallManagement": "Fanghuoqiang guanli",
+          "vpnSetup": "VPN shezhi",
+          "accessControl": "Fangwen kongzhi",
+          "sslTlsConfiguration": "SSL/TLS peizhi"
+        }
+      }
+    },
+    "tail": {
+      "title": "Yong bu ting zhi xuexi",
+      "body": "Keji riri jingjin. Wo buduan shiyan he yali ceshi xinxing gongju, youhua shijian, bing jiaofu ke lianghua de geng hao jieguo."
+    }
+  },
+  "services": {
+    "h2": {
+      "1": "Wo neng ruhe",
+      "2": "Bang ni"
+    },
+    "lead": "Cong quanliujing jichu sheshi dao nayi ge jiaonan de linshi renwu, wo dou tigong shiji, jianjiu de jiejue fang'an.",
+    "cards": {
+      "homelab": {
+        "title": "Jiating shiyanshi dajian",
+        "description": "Sheji he bushu yige yongyu xuexi, zhantai huozhe zizhuzhuchi de jiating shiyanshi, jichu zai kekao de wangluo, xunihua he cunchu.",
+        "features": {
+          "1": "Yingjian tuijian",
+          "2": "Wangluo tuopu",
+          "3": "Xunihua shezhi",
+          "4": "Cunchu jiegou",
+          "5": "Dianyuan yu jianrenxing"
+        }
+      },
+      "cloud": {
+        "title": "Yun shang qianyi",
+        "description": "Yi ge jianshi, guanzhu chengben de jihua ji shiyonghua mubiao jiegou, youxiao jiangdi ni yun qianyi de fengxian.",
+        "features": {
+          "1": "Qianyi zhanlue",
+          "2": "Chengben youhua",
+          "3": "Xingneng tiaoyou",
+          "4": "Jiegou sheji",
+          "5": "Hegui shezhi"
+        }
+      },
+      "security": {
+        "title": "Anquan shezhi",
+        "description": "Jianli jianshi ke xing de anquan kongzhi, xianshi youxiao jiangdi fengxian, er bu fangman jiaofu sudu.",
+        "features": {
+          "1": "Wangluo anquan",
+          "2": "Fangwen kongzhi",
+          "3": "Fanghuoqiang shezhi",
+          "4": "Anquan shenji",
+          "5": "Loudong saomiao"
+        }
+      },
+      "automation": {
+        "title": "Kekaoxin de zidonghua",
+        "description": "Yong qiangzhuang, dengjia de zidonghua xiaochu zaowu, rang ni zhuanzhu yu geng you jiazhi de chengguo.",
+        "features": {
+          "1": "Dingzhi jiaoben",
+          "2": "Liucheng zidonghua",
+          "3": "CI/CD liushuixian",
+          "4": "Jichu sheshi jidaima",
+          "5": "Gongzuoliu youhua"
+        }
+      },
+      "monitoring": {
+        "title": "Jiankong yu tixing",
+        "description": "Huoqu duixitong de kexingdong kanjian he zaoqi xinhao, yuan yuan zaoyu yonghu ganshou yingxiang zhiqian.",
+        "features": {
+          "1": "Xitong jiankong",
+          "2": "Zhihui tixing",
+          "3": "Xingneng mianban",
+          "4": "Jiankang jiancha",
+          "5": "Rizhi huizong"
+        }
+      },
+      "data": {
+        "title": "Shuju yu beifen",
+        "description": "Yi jianshi de beifen, kuaisu huifu he yange shengmingzhou guanli baohu guanjian shuju.",
+        "features": {
+          "1": "Beifen zhanlue",
+          "2": "Zainan huifu",
+          "3": "Shuju qianyi",
+          "4": "Cunchu youhua",
+          "5": "Shuju guidang"
+        }
+      }
+    },
+    "tail": {
+      "title": "Xuyao butong de fangan ma?",
+      "body": "Changjing ge yi, muban changchang nan yi shiyong. Gaosu wo ni de xuqiu, women jiang genju mubiao, xianzhi he shijianbiao sheji heyin de jiejue fang'an.",
+      "cta": "Women liaoliao"
+    }
+  },
+  "contact": {
+    "h2": {
+      "1": "Lianxi",
+      "2": "Wo"
+    },
+    "lead": "You xiangmu xuyao guimo dingyi huozhe wenti kongjian dai jiemi ma? Lianxi wo ba; wo qidai liaojie ni de mubiao, bing gouhua yitiao jianshi de qianjin lujing.",
+    "drop": {
+      "title": "Gei wo liuyan",
+      "body": "Shiyong xiafang biaodan huozhe fa youjian, nage geng fangbian jiu xing. Wo hui yuedu meitiao xiaoxi."
+    },
+    "form": {
+      "name_label": "Xingming *",
+      "email_label": "Youxiang *",
+      "subject_label": "Zhuti",
+      "message_label": "Neirong *",
+      "name_ph": "Ni de quanming",
+      "email_ph": "you@company.com",
+      "subject_ph": "Xiangmu, wenti, huo hezuo",
+      "message_ph": "Jianyao miaoshu mubiao, xianzhi he shijianbiao.",
+      "send": "Fasong xiaoxi"
+    },
+    "connect": {
+      "title": "Lianxi wo",
+      "body": "Wulun ni zai yanzheng gainian, shengji xitong, haishi xuyao dier yijian, wo dou leyiyu canyu bing tigong qingxi de xiayibu.",
+      "findMe": "Wangshang zhaodao wo"
+    },
+    "info": {
+      "email": {
+        "title": "Youxiang",
+        "value": "hello@domiadi.com"
+      },
+      "location": {
+        "title": "Didian",
+        "value": "Quanqiu fanwei ke fuwu"
+      },
+      "response": {
+        "title": "Huifu shijian",
+        "value": "Tongchang zai 24 xiaoshi nei"
+      }
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "footer": {
+    "engineered": "Gongcheng jianzao yong",
+    "rights": "Bao liu suoyou quanli."
+  },
+  "error404": {
+    "title": "404 - Yemian wei faxian | Domi Adiwijaya",
+    "h2": "Yemian wei faxian",
+    "p": "Ni zhaodao de yemian bu cunzai huozhe yi bei yidong.",
+    "goHome": "Fanhui shouye",
+    "links": "Huozhe shishi yixie lianjie:"
+  }
+}

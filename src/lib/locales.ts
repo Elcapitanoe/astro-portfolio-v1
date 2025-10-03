@@ -1,7 +1,14 @@
 export const SUPPORTED_LOCALES = [
+  { code: 'ar', name: 'Arabic' },
+  { code: 'bn', name: 'Bengali' },
   { code: 'en', name: 'English' },
-  { code: 'id', name: 'Bahasa Indonesia' },
-  { code: 'jv', name: 'Bahasa Jawa' },
+  { code: 'fr', name: 'French' },
+  { code: 'hi', name: 'Hindi' },
+  { code: 'id', name: 'Indonesian' },
+  { code: 'zh', name: 'Mandarin Chinese' },
+  { code: 'pt', name: 'Portuguese' },
+  { code: 'ru', name: 'Russian' },
+  { code: 'es', name: 'Spanish' },
 ] as const;
 
 export type Locale = (typeof SUPPORTED_LOCALES)[number]['code'];
