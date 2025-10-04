@@ -1,7 +1,14 @@
 name = "portfolio"
+main = "src/worker.ts"
 compatibility_date = "2024-05-06"
 
-assets = { directory = "./dist" }
+routes = ["domiadi.com/*", "www.domiadi.com/*"]
+workers_dev = false
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+run_worker_first = true
 
 [build]
 command = "npm run build"
