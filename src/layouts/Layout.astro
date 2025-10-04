@@ -45,9 +45,6 @@ const mirrorPath = (target: string) => hasLangPrefix ? abs(path.replace(/^\/([a-
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={abs('/domi.png')} />
     <meta name="twitter:creator" content="@domiadiwijaya" />
-    <script defer is:inline src="https://unpkg.com/flowbite@2.5.1/dist/flowbite.min.js"></script>
-    <script defer is:inline src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script defer is:inline data-domain="domiadi.com" src="https://plausible.io/js/script.js"></script>
     {SUPPORTED_LOCALES.map(({ code }) => (
       <link rel="alternate" hreflang={code} href={mirrorPath(code)} />
     ))}
