@@ -5,19 +5,24 @@ import { SUPPORTED_LOCALES, DEFAULT_LOCALE, X_DEFAULT_URL } from '../lib/locales
 export interface Props {
   title: string;
   description?: string;
-  lang: Locale;
+  lang?: Locale;
 }
 
 const {
   title,
   description = "Explore Domi Adiwijaya's portfolio, tech insights, and innovative projects by a professional Tech & HomeLab Enthusiast.",
-  lang,
+  lang: _lang,
 } = Astro.props;
+
+const lang = (_lang ?? DEFAULT_LOCALE) as Locale;
 
 let path = Astro.url.pathname;
 if (!path.endsWith('/')) path += '/';
-const canonicalURL = new URL(path, Astro.site);
-const abs = (p: string) => new URL(p, Astro.site).href;
+const site = Astro.site;
+const canonicalURL = new URL(path, site);
+const abs = (p: string) => new URL(p, site).href;
+const hasLangPrefix = /^\/([a-z]{2})(?:-[A-Z]{2})\//.test(path) || /^\/([a-z]{2})\//.test(path);
+const mirrorPath = (target: string) => hasLangPrefix ? abs(path.replace(/^\/([a-z]{2})(?:-[A-Z]{2})?\//, `/${target}/`)) : abs(`/${target}/`);
 ---
 
 <!DOCTYPE html>
@@ -44,9 +49,9 @@ const abs = (p: string) => new URL(p, Astro.site).href;
     <script defer is:inline src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer is:inline data-domain="domiadi.com" src="https://plausible.io/js/script.js"></script>
     {SUPPORTED_LOCALES.map(({ code }) => (
-      <link rel="alternate" hreflang={code} href={abs(`/${code}/`)} />
+      <link rel="alternate" hreflang={code} href={mirrorPath(code)} />
     ))}
-    <link rel="alternate" hreflang="x-default" href={X_DEFAULT_URL ? abs(X_DEFAULT_URL) : abs(`/${DEFAULT_LOCALE}/`)} />
+    <link rel="alternate" hreflang="x-default" href={X_DEFAULT_URL ? abs(X_DEFAULT_URL) : mirrorPath(DEFAULT_LOCALE)} />
     <link rel="canonical" href={canonicalURL.href} />
     <slot name="head" />
     <title>{title}</title>
