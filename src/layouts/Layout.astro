@@ -28,6 +28,15 @@ const mirrorPath = (target: string) => hasLangPrefix ? abs(path.replace(/^\/([a-
 <!DOCTYPE html>
 <html lang={lang}>
   <head>
+    <script is:inline src="https://www.googletagmanager.com/gtag/js?id=GTM-NGJ5QKLW" type="text/partytown"></script>
+<script is:inline type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () {
+        dataLayer.push(arguments);
+    };
+  window.gtag('js', new Date());
+  window.gtag('config', 'GTM-NGJ5QKLW');
+</script>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
