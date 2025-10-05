@@ -1,14 +1,16 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import sitemap from "@astrojs/sitemap";
-import react from "@astrojs/react";
 import partytown from "@astrojs/partytown";
+import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https://domiadi.com",
   trailingSlash: "always",
+  viewTransitions: true,
   integrations: [
     tailwind(),
+    react(),
     sitemap({
       i18n: {
         defaultLocale: "en",
@@ -25,11 +27,6 @@ export default defineConfig({
           zh: "zh",
         },
       },
-
-      integrations: [
-        partytown({ config: { forward: ["dataLayer.push", "gtag"] } }),
-      ],
-
       filter: (page) => {
         const { pathname } = new URL(page);
         if (pathname === "/") return false;
@@ -38,8 +35,7 @@ export default defineConfig({
       },
       entryLimit: 45000,
     }),
-    react(),
-    partytown(),
+    partytown({ config: { forward: ["dataLayer.push", "gtag"] } }),
   ],
   build: { inlineStylesheets: "auto" },
   compressHTML: true,

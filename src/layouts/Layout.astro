@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 import type { Locale } from '../lib/locales';
 import { SUPPORTED_LOCALES, DEFAULT_LOCALE, X_DEFAULT_URL } from '../lib/locales';
 
@@ -26,7 +28,7 @@ const mirrorPath = (target: string) => hasLangPrefix ? abs(path.replace(/^\/([a-
 ---
 
 <!DOCTYPE html>
-<html lang={lang}>
+<html lang={lang} data-astro-transition-scope="layout">
   <head>
     <script is:inline src="https://www.googletagmanager.com/gtag/js?id=GTM-NGJ5QKLW" type="text/partytown"></script>
 <script is:inline type="text/partytown">
@@ -37,7 +39,7 @@ const mirrorPath = (target: string) => hasLangPrefix ? abs(path.replace(/^\/([a-
   window.gtag('js', new Date());
   window.gtag('config', 'GTM-NGJ5QKLW');
 </script>
-<script type="text/javascript">
+    <script type="text/javascript" is:inline>
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -69,7 +71,9 @@ const mirrorPath = (target: string) => hasLangPrefix ? abs(path.replace(/^\/([a-
     <slot name="head" />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen bg-slate-900 text-white">
-    <slot />
+  <body class="min-h-screen bg-background text-foreground">
+    <div class="flex min-h-screen flex-col" transition:animate="fade">
+      <slot />
+    </div>
   </body>
 </html>

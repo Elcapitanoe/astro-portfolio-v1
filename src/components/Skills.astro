@@ -1,6 +1,7 @@
 ---
 import { createT } from '../lib/i18n';
 import type { Locale } from '../lib/locales';
+import SkillsTabs from './react/SkillsTabs';
 
 interface Props {
   lang: Locale;
@@ -65,6 +66,17 @@ const getIcon = (iconName: string) => {
   };
   return icons[iconName] || icons.terminal;
 };
+
+const tabCategories = skillCategories.map((category) => ({
+  id: category.key,
+  title: t(category.titleKey),
+  skills: category.skills.map((skill) => ({
+    id: skill.key,
+    name: t(`skills.categories.${category.key}.items.${skill.key}`),
+    level: skill.level,
+    icon: skill.icon,
+  })),
+}));
 ---
 
 <section id="skills" class="py-20 bg-slate-900">
@@ -78,7 +90,15 @@ const getIcon = (iconName: string) => {
       </p>
     </div>
 
-    <div class="grid lg:grid-cols-3 gap-8">
+    <div class="md:hidden">
+      <SkillsTabs
+        client:visible
+        categories={tabCategories}
+        initialCategory={tabCategories[0]?.id}
+      />
+    </div>
+
+    <div class="hidden md:grid lg:grid-cols-3 gap-8">
       {skillCategories.map((category) => (
         <div class="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/20 hover:border-slate-600/40">
           <div class="flex items-center space-x-3 mb-8">
