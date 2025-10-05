@@ -1,46 +1,52 @@
-import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
-import sitemap from '@astrojs/sitemap';
-import react from '@astrojs/react';
+import { defineConfig } from "astro/config";
+import tailwind from "@astrojs/tailwind";
+import sitemap from "@astrojs/sitemap";
+import react from "@astrojs/react";
+import partytown from "@astrojs/partytown";
 
 export default defineConfig({
-  site: 'https://domiadi.com',
-  trailingSlash: 'always',
+  site: "https://domiadi.com",
+  trailingSlash: "always",
   integrations: [
     tailwind(),
     sitemap({
       i18n: {
-        defaultLocale: 'en',
+        defaultLocale: "en",
         locales: {
-          ar: 'ar',
-          bn: 'bn',
-          en: 'en',
-          fr: 'fr',
-          hi: 'hi',
-          id: 'id',
-          pt: 'pt',
-          ru: 'ru',
-          es: 'es',
-          zh: 'zh', 
+          ar: "ar",
+          bn: "bn",
+          en: "en",
+          fr: "fr",
+          hi: "hi",
+          id: "id",
+          pt: "pt",
+          ru: "ru",
+          es: "es",
+          zh: "zh",
         },
       },
-      
+
+      integrations: [
+        partytown({ config: { forward: ["dataLayer.push", "gtag"] } }),
+      ],
+
       filter: (page) => {
         const { pathname } = new URL(page);
-        if (pathname === '/') return false;
-        if (pathname.includes('/draft')) return false;
+        if (pathname === "/") return false;
+        if (pathname.includes("/draft")) return false;
         return true;
       },
-      entryLimit: 45000, 
+      entryLimit: 45000,
     }),
     react(),
+    partytown(),
   ],
-  build: { inlineStylesheets: 'auto' },
+  build: { inlineStylesheets: "auto" },
   compressHTML: true,
   vite: {
     build: {
-      minify: 'esbuild',
-      cssMinify: 'esbuild',
+      minify: "esbuild",
+      cssMinify: "esbuild",
     },
   },
 });
