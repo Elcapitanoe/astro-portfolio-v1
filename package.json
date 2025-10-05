@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/Elcapitanoe/astro-portfolio-v1#readme",
   "dependencies": {
+    "@astrojs/partytown": "^2.1.4",
     "@astrojs/react": "^4.4.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
