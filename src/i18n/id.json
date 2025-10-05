@@ -9,7 +9,10 @@
     "skills": "Keahlian",
     "services": "Layanan",
     "contact": "Kontak",
-    "openMenu": "Buka menu navigasi"
+    "openMenu": "Buka menu navigasi",
+    "closeMenu": "Tutup menu navigasi",
+    "language": "Bahasa",
+    "languageSelected": "Dipilih"
   },
   "hero": {
     "alt": "Domi Adiwijaya",
@@ -222,7 +225,12 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn"
-	   
+
+    },
+    "actions": {
+      "copyEmail": "Salin email",
+      "emailCopied": "Email tersalin ke clipboard",
+      "openEmail": "Kirim email"
     }
   },
   "footer": {

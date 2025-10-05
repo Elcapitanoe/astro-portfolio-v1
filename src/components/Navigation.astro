@@ -1,7 +1,8 @@
 ---
 import { createT } from '../lib/i18n';
-import type { Locale } from '../lib/locales';
+import { SUPPORTED_LOCALES, type Locale } from '../lib/locales';
 import LanguageSwitcher from './LanguageSwitcher.astro';
+import MobileNavMenu from './react/MobileNavMenu';
 
 interface Props {
   lang: Locale;
@@ -19,48 +20,56 @@ const navItems = [
 ];
 
 const menuLabel = t('nav.openMenu');
+const closeLabel = t('nav.closeMenu');
+
+const { pathname, hash } = Astro.url;
+const localeOptions = SUPPORTED_LOCALES.map((locale) => {
+  const normalizedPath = pathname.replace(/^\/[a-z]{2}(?:-[A-Z]{2})?\//, '/');
+  const hrefPath = `/${locale.code}${normalizedPath}`.replace(/\/{2,}/g, '/');
+  const href = hash ? `${hrefPath}${hash}` : hrefPath;
+  return {
+    code: locale.code,
+    name: locale.name,
+    href,
+    active: locale.code === lang,
+  };
+});
 ---
 
-<nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm shadow-lg">
+<header
+  class="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-slate-950/70 backdrop-blur-lg"
+  transition:persist="site-nav"
+>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
-      <div class="flex-shrink-0">
+      <div class="flex items-center gap-3">
         <span class="text-xl font-bold text-white">DA</span>
       </div>
 
-      <div class="hidden md:flex items-center space-x-6">
+      <nav class="hidden md:flex items-center space-x-6" aria-label="Primary navigation">
         <div class="ml-10 flex items-baseline space-x-4">
           {navItems.map((item) => (
-            <a href={item.href} class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-slate-800/50">
+            <a
+              href={item.href}
+              class="text-sm font-medium text-muted-foreground transition hover:text-white"
+            >
               {item.label}
             </a>
           ))}
         </div>
         <LanguageSwitcher lang={lang} />
-      </div>
+      </nav>
 
       <div class="md:hidden">
-        <details class="relative">
-          <summary class="list-none text-slate-300 hover:text-white p-2 cursor-pointer" aria-label={menuLabel}>
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </summary>
-
-          <div class="absolute right-0 mt-2 w-48 bg-slate-900/95 backdrop-blur-sm shadow-lg rounded-md z-50">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {navItems.map((item) => (
-                <a href={item.href} class="text-slate-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left hover:bg-slate-800/50">
-                  {item.label}
-                </a>
-              ))}
-            </div>
-            <div class="border-t border-slate-700/40 px-3 py-3">
-              <LanguageSwitcher lang={lang} class="flex-wrap" />
-            </div>
-          </div>
-        </details>
+        <MobileNavMenu
+          client:idle
+          navItems={navItems}
+          locales={localeOptions}
+          menuLabel={menuLabel}
+          closeLabel={closeLabel}
+          selectLabel={t('nav.languageSelected')}
+        />
       </div>
     </div>
   </div>
-</nav>
+</header>

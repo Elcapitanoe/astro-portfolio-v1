@@ -9,7 +9,10 @@
     "skills": "Expertise",
     "services": "Services",
     "contact": "Contact",
-    "openMenu": "Open navigation menu"
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "language": "Language",
+    "languageSelected": "Selected"
   },
   "hero": {
     "alt": "Domi Adiwijaya",
@@ -221,7 +224,12 @@
     },
     "social": {
       "github": "GitHub",
-            "linkedin": "LinkedIn"
+      "linkedin": "LinkedIn"
+    },
+    "actions": {
+      "copyEmail": "Copy email",
+      "emailCopied": "Email copied to clipboard",
+      "openEmail": "Open email app"
     }
   },
   "footer": {

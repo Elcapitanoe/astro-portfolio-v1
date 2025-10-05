@@ -1,5 +1,7 @@
 ---
+import { createT } from '../lib/i18n';
 import { SUPPORTED_LOCALES, type Locale } from '../lib/locales';
+import LanguageSwitcherDropdown from './react/LanguageSwitcherDropdown';
 
 interface Props {
   lang: Locale;
@@ -7,83 +9,30 @@ interface Props {
 }
 
 const { lang, class: className = '' } = Astro.props;
+const t = await createT(lang);
+const { pathname, hash } = Astro.url;
 
-const activeLocale =
-  SUPPORTED_LOCALES.find((locale) => locale.code === lang) ?? SUPPORTED_LOCALES[0];
-const containerClasses = ['relative inline-block w-full text-left md:w-auto', className]
-  .filter(Boolean)
-  .join(' ');
+const locales = SUPPORTED_LOCALES.map((locale) => {
+  const normalizedPath = pathname.replace(/^\/[a-z]{2}(?:-[A-Z]{2})?\//, '/');
+  const hrefPath = `/${locale.code}${normalizedPath}`.replace(/\/{2,}/g, '/');
+  const href = hash ? `${hrefPath}${hash}` : hrefPath;
+  return {
+    code: locale.code,
+    name: locale.name,
+    href,
+    active: locale.code === lang,
+  };
+});
+
+const menuLabel = t('nav.language');
+const selectLabel = t('nav.languageSelected');
 ---
 
-<div class={containerClasses}>
-  <details class="group relative w-full md:w-auto">
-    <summary
-      class="flex w-full items-center justify-between gap-2 rounded-md bg-gradient-to-r from-blue-950 to-purple-950 px-3 py-2 text-sm font-medium text-white shadow-sm transition duration-300 hover:from-blue-900 hover:to-purple-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
-    >
-      <span>{activeLocale.name}</span>
-      <svg
-        class="h-4 w-4 text-slate-400 transition-transform duration-300 group-open:rotate-180"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        aria-hidden="true"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 0 1 1.08 1.04l-4.25 4.25a.75.75 0 0 1-1.06 0L5.21 8.27a.75.75 0 0 1 .02-1.06z"
-          clip-rule="evenodd"
-        />
-      </svg>
-    </summary>
-
-    <div
-      class="absolute left-0 right-0 z-50 mt-2 w-full min-w-[10rem] max-w-xs rounded-md bg-slate-900/95 shadow-lg ring-1 ring-black/5 backdrop-blur-sm md:left-auto md:w-48"
-    >
-      <ul class="py-2 text-sm text-slate-200">
-        {SUPPORTED_LOCALES.map((locale) => {
-          const isActive = locale.code === lang;
-          return (
-            <li>
-              <a
-                href={`/${locale.code}/`}
-                data-lang-link={locale.code}
-                class={`block px-4 py-2 transition-colors duration-200 ${
-                  isActive
-                    ? 'bg-gradient-to-r from-blue-950 to-purple-950 text-white shadow-sm'
-                    : 'hover:bg-slate-800/70 hover:text-white'
-                }`}
-                aria-current={isActive ? 'true' : 'false'}
-              >
-                {locale.name}
-              </a>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  </details>
+<div class:list={['inline-flex', 'w-full', 'justify-start', 'md:w-auto', className]}>
+  <LanguageSwitcherDropdown
+    client:idle
+    locales={locales}
+    menuLabel={menuLabel}
+    selectLabel={selectLabel}
+  />
 </div>
-
-<script is:inline>
-  (() => {
-    if (typeof window === 'undefined') return;
-    if (window.__langSwitcherInit) return;
-    window.__langSwitcherInit = true;
-
-    const links = document.querySelectorAll('[data-lang-link]');
-    const maxAge = 60 * 60 * 24 * 365;
-
-    links.forEach((link) => {
-      link.addEventListener('click', () => {
-        const code = link.getAttribute('data-lang-link');
-        if (!code) return;
-        document.cookie = `lang=${code}; path=/; max-age=${maxAge}; SameSite=Lax`;
-      });
-    });
-  })();
-</script>
-
-<style>
-  summary::-webkit-details-marker {
-    display: none;
-  }
-</style>

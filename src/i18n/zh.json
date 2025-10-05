@@ -9,7 +9,10 @@
     "skills": "专长",
     "services": "服务",
     "contact": "联系",
-    "openMenu": "打开导航菜单"
+    "openMenu": "打开导航菜单",
+    "closeMenu": "关闭导航菜单",
+    "language": "语言",
+    "languageSelected": "已选择"
   },
   "hero": {
     "alt": "Domi Adiwijaya",
@@ -222,7 +225,12 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn"
-	   
+
+    },
+    "actions": {
+      "copyEmail": "复制邮箱",
+      "emailCopied": "邮箱已复制到剪贴板",
+      "openEmail": "发送邮件"
     }
   },
   "footer": {

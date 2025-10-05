@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --background: 222 47% 7%;
+  --foreground: 213 31% 91%;
+  --muted: 222 35% 14%;
+  --muted-foreground: 215 20% 70%;
+  --popover: 222 47% 9%;
+  --popover-foreground: 213 31% 91%;
+  --card: 222 47% 9%;
+  --card-foreground: 213 31% 91%;
+  --border: 215 27% 26%;
+  --input: 215 27% 26%;
+  --primary: 224 76% 55%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 262 83% 64%;
+  --secondary-foreground: 210 40% 96%;
+  --accent: 198 93% 60%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 358 75% 59%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 223 76% 60%;
+  --radius: 0.75rem;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+[data-astro-transition-scope]::view-transition-old(root),
+[data-astro-transition-scope]::view-transition-new(root) {
+  animation: none;
+}

@@ -9,7 +9,10 @@
     "skills": "দক্ষতা",
     "services": "সেবা",
     "contact": "যোগাযোগ",
-    "openMenu": "নেভিগেশন মেনু খুলুন"
+    "openMenu": "নেভিগেশন মেনু খুলুন",
+    "closeMenu": "নেভিগেশন মেনু বন্ধ করুন",
+    "language": "ভাষা",
+    "languageSelected": "নির্বাচিত"
   },
   "hero": {
     "alt": "Domi Adiwijaya",
@@ -222,7 +225,12 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn"
-	   
+
+    },
+    "actions": {
+      "copyEmail": "ইমেইল কপি করুন",
+      "emailCopied": "ইমেইল ক্লিপবোর্ডে কপি হয়েছে",
+      "openEmail": "ইমেইল পাঠান"
     }
   },
   "footer": {

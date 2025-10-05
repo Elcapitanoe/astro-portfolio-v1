@@ -1,6 +1,7 @@
 ---
 import { createT } from '../lib/i18n';
 import type { Locale } from '../lib/locales';
+import ContactActions from './react/ContactActions';
 
 interface Props {
   lang: Locale;
@@ -123,12 +124,16 @@ const getContactIcon = (iconName: string) => {
             ></textarea>
           </div>
 
-          <a href={`mailto:${t('contact.info.email.value')}`} class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-4 rounded-xl font-medium hover:shadow-lg hover:shadow-blue-500/25 flex items-center justify-center space-x-2">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <Fragment set:html={getContactIcon('send')} />
-            </svg>
-            <span>{t('contact.form.send')}</span>
-          </a>
+          <ContactActions
+            client:visible
+            email={t('contact.info.email.value')}
+            copyLabel={t('contact.actions.copyEmail')}
+            copiedLabel={t('contact.actions.emailCopied')}
+            popoverTitle={t('contact.info.response.title')}
+            popoverDescription={t('contact.info.response.value')}
+            sendLabel={t('contact.actions.openEmail')}
+            mailtoHref={`mailto:${t('contact.info.email.value')}`}
+          />
         </form>
       </div>
 
