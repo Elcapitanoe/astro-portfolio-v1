@@ -70,6 +70,17 @@ const mirrorPath = (target: string) => hasLangPrefix ? abs(path.replace(/^\/([a-
     <link rel="canonical" href={canonicalURL.href} />
     <slot name="head" />
     <title>{title}</title>
+    <link rel="canonical" href="https://domiadi.com/" /> 
+    <meta property="og:site_name" content="Domi Adiwijaya" /> 
+    <script type="application/ld+json"> 
+    { 
+      "@context": "https://schema.org", 
+      "@type": "WebSite", 
+      "name": "Domi Adiwijaya", 
+      "alternateName": ["Domi", "domiadi.com"], 
+      "url": "https://domiadi.com/"
+    } 
+    </script>
   </head>
   <body class="min-h-screen bg-background text-foreground">
     <div class="flex min-h-screen flex-col" transition:animate="fade">
