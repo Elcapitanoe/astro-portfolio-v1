@@ -58,10 +58,7 @@ export function MobileNavMenu({
       </DialogTrigger>
       <DialogContent className="w-[min(92vw,22rem)] gap-6 bg-slate-950/90">
         <DialogHeader className="space-y-1">
-          <DialogTitle className="text-lg font-semibold">{menuLabel}</DialogTitle>
-          <DialogDescription className="text-sm text-muted-foreground">
-            {selectLabel}
-          </DialogDescription>
+          <DialogTitle className="mb-5 text-lg font-semibold">{menuLabel}</DialogTitle>
         </DialogHeader>
         <nav aria-label={menuLabel} className="space-y-3">
           {items.map((item) => (
@@ -75,20 +72,22 @@ export function MobileNavMenu({
             </a>
           ))}
         </nav>
-        <div className="space-y-2">
-          <p className="text-xs uppercase tracking-wide text-muted-foreground">{selectLabel}</p>
+        <div className="mt-4 space-y-2">
           <LanguageSwitcherDropdown
             locales={locales}
             menuLabel={menuLabel}
             selectLabel={selectLabel}
           />
         </div>
-        <DialogClose asChild>
-          <Button variant="ghost" className="mt-2 gap-2 text-sm text-muted-foreground">
-            <X className="h-4 w-4" aria-hidden="true" />
-            {closeLabel}
-          </Button>
-        </DialogClose>
+
+<DialogClose asChild>
+  <Button variant="ghost" className="mt-5 gap-2 mx-auto text-sm text-muted-foreground">
+    <X className="h-4 w-4" aria-hidden="true" />
+    {closeLabel}
+  </Button>
+</DialogClose>
+
+
       </DialogContent>
     </Dialog>
   );
