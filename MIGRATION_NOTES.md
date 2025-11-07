@@ -20,7 +20,7 @@ npx playwright test  # run smoke tests
 ## React Islands
 - React components are co-located under `src/components/react`. They are imported from `.astro` files with explicit hydration directives (`client:idle`/`client:visible`).
 - Only interactive widgets use React:
-  - `LanguageSelectorDropdown` and `MobileNavMenu` (Radix dropdown/dialog).
+  - `MobileNavMenu` (Radix dialog) handles navigation on small screens.
   - `SkillsTabs` (Radix tabs with Motion One animation) for mobile view.
   - `ContactActions` (Radix popover/toast/tooltip) replacing inline scripts.
 - Non-interactive sections remain pure Astro/HTML to keep almost-zero client JS.
@@ -44,7 +44,6 @@ npx playwright test  # run smoke tests
 ## Testing & Quality
 - A Playwright smoke suite lives under `tests/` and covers:
   - Mobile navigation open/close & keyboard traversal.
-  - Language switcher interaction.
   - Skills tabs switching.
   - Contact actions toast/clipboard behaviour.
 - Target Lighthouse baselines: Performance ≥ 85, Accessibility ≥ 95, Best Practices ≥ 95, SEO ≥ 95. Keep React islands as small as possible to stay within the thresholds.
@@ -55,7 +54,7 @@ npx playwright test  # run smoke tests
 - If a new feature does not need interactivity, keep it in Astro/HTML.
 
 ## Accessibility Checklist
-- Use Radix primitives for focus management (dialog, menu, tabs, tooltip, toast) and provide accessible labels/translations.
+- Use Radix primitives for focus management (dialog, menu, tabs, tooltip, toast) and provide accessible labels.
 - Ensure persistent header continues to expose skip links/landmarks if added later.
 - When copying new shadcn components, audit them for keyboard behaviour and adapt to the dark theme variables defined in Tailwind.
 

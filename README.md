@@ -7,21 +7,6 @@ A clean, fast, and minimal personal portfolio built with [Astro](https://astro.b
 - Tailwind CSS (utility-first styling)
 - Optional: TypeScript support if you prefer strict typing
 
-## Internationalization (i18n)
-
-All translation resources live in `/src/i18n`.
-
-If you notice any errors, awkward phrasing, or missing strings, I would appreciate your help:
-- Contact me via the email listed on my GitHub profile, or
-- Fork this repo and open a Pull Request, or
-- Open an Issue on the repository’s issue page
-
-### Translation guidelines
-- Keep keys stable and meaningful. Avoid editing existing keys unless necessary.
-- Preserve interpolation placeholders
-- Maintain consistent punctuation and capitalization across languages.
-- Keep line breaks and spacing where they carry meaning.
-
 ## Deployment
 
 This site builds to static assets by default and works well on most hosts. Common options:
@@ -32,7 +17,7 @@ Run `npm run build`, then follow your platform’s upload/deploy instructions.
 
 ## Contributing
 
-Issues and PRs are welcome. For translation fixes, see the i18n section above. For code changes:
+Issues and PRs are welcome. For code changes:
 1. Fork the repository
 2. Create a feature branch
 3. Commit with clear messages

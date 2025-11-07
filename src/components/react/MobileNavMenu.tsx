@@ -11,8 +11,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { type LocaleOption } from "@/lib/locale-options";
-import LanguageSelectorDropdown from "./LanguageSelectorDropdown";
 
 type NavItem = {
   href: string;
@@ -21,18 +19,16 @@ type NavItem = {
 
 interface MobileNavMenuProps {
   navItems: NavItem[];
-  locales: LocaleOption[];
   menuLabel: string;
   closeLabel: string;
-  selectLabel: string;
+  description: string;
 }
 
 export function MobileNavMenu({
   navItems,
-  locales,
   menuLabel,
   closeLabel,
-  selectLabel,
+  description,
 }: MobileNavMenuProps) {
   const [open, setOpen] = useState(false);
 
@@ -54,7 +50,7 @@ export function MobileNavMenu({
         <DialogHeader className="space-y-1">
           <DialogTitle className="text-lg font-semibold">{menuLabel}</DialogTitle>
           <DialogDescription className="text-sm text-muted-foreground">
-            {selectLabel}
+            {description}
           </DialogDescription>
         </DialogHeader>
         <nav aria-label={menuLabel} className="space-y-3">
@@ -69,14 +65,6 @@ export function MobileNavMenu({
             </a>
           ))}
         </nav>
-        <div className="space-y-2">
-          <p className="text-xs uppercase tracking-wide text-muted-foreground">{selectLabel}</p>
-          <LanguageSelectorDropdown
-            locales={locales}
-            menuLabel={menuLabel}
-            triggerClassName="w-full justify-between"
-          />
-        </div>
         <DialogClose asChild>
           <Button variant="ghost" className="mt-2 gap-2 text-sm text-muted-foreground">
             <X className="h-4 w-4" aria-hidden="true" />
