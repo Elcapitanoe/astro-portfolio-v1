@@ -74,7 +74,6 @@ export function MobileNavMenu({
           <LanguageSelectorDropdown
             locales={locales}
             menuLabel={menuLabel}
-            selectLabel={selectLabel}
             triggerClassName="w-full justify-between"
           />
         </div>
