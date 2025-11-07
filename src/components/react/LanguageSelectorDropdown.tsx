@@ -14,7 +14,6 @@ import { cn } from "@/lib/utils";
 interface LanguageSelectorDropdownProps {
   locales: LocaleOption[];
   menuLabel: string;
-  selectLabel: string;
   cookieName?: string;
   cookieMaxAge?: number;
   triggerClassName?: string;
@@ -23,7 +22,6 @@ interface LanguageSelectorDropdownProps {
 export function LanguageSelectorDropdown({
   locales,
   menuLabel,
-  selectLabel,
   cookieName = "lang",
   cookieMaxAge = 60 * 60 * 24 * 365,
   triggerClassName,
@@ -80,14 +78,6 @@ export function LanguageSelectorDropdown({
             aria-selected={locale.active}
           >
             <span className="truncate">{locale.name}</span>
-            {locale.active ? (
-               <span
-                aria-hidden="true"
-                className="hidden text-xs font-semibold text-primary lg:inline"
-              >
-                {selectLabel}
-              </span>
-            ) : null}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
