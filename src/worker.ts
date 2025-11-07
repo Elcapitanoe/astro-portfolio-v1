@@ -8,12 +8,7 @@ export default {
       url.hostname = "domiadi.com";
       return Response.redirect(url.toString(), 308);
     }
-
-    if (path === "/") {
-      url.pathname = "/en/";
-      return Response.redirect(url.toString(), 308);
-    }
-
+    
     const m = path.match(/^\/([a-z]{2})(?:-[A-Z]{2})?$/);
     if (m) {
       url.pathname = `/${m[1]}/`;
