@@ -1,0 +1,30 @@
+---
+import { createT } from '../lib/i18n';
+import type { Locale } from '../lib/locales';
+import { buildLocaleOptions, type LocaleOption } from '../lib/locale-options';
+import LanguageSelectorDropdown from './react/LanguageSelectorDropdown';
+
+interface Props {
+  lang: Locale;
+  class?: string;
+  locales?: LocaleOption[];
+}
+
+const { lang, class: className = '', locales: providedLocales } = Astro.props;
+const t = await createT(lang);
+const { pathname, hash } = Astro.url;
+
+const locales = providedLocales ?? buildLocaleOptions({ lang, pathname, hash });
+const menuLabel = t('nav.language');
+const selectLabel = t('nav.languageSelected');
+---
+
+<div class:list={['inline-flex', 'w-full', 'justify-start', 'md:w-auto', className]}>
+  <LanguageSelectorDropdown
+    client:idle
+    locales={locales}
+    menuLabel={menuLabel}
+    selectLabel={selectLabel}
+    triggerClassName="w-full justify-between md:w-auto md:justify-center"
+  />
+</div>

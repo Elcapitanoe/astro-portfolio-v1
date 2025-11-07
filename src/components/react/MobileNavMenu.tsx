@@ -4,25 +4,19 @@ import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  DialogClose,
 } from "@/components/ui/dialog";
-import LanguageSwitcherDropdown from "./LanguageSwitcherDropdown";
+import { type LocaleOption } from "@/lib/locale-options";
+import LanguageSelectorDropdown from "./LanguageSelectorDropdown";
 
 type NavItem = {
   href: string;
   label: string;
-};
-
-type LocaleOption = {
-  code: string;
-  name: string;
-  href: string;
-  active: boolean;
 };
 
 interface MobileNavMenuProps {
@@ -77,10 +71,11 @@ export function MobileNavMenu({
         </nav>
         <div className="space-y-2">
           <p className="text-xs uppercase tracking-wide text-muted-foreground">{selectLabel}</p>
-          <LanguageSwitcherDropdown
+          <LanguageSelectorDropdown
             locales={locales}
             menuLabel={menuLabel}
             selectLabel={selectLabel}
+            triggerClassName="w-full justify-between"
           />
         </div>
         <DialogClose asChild>
