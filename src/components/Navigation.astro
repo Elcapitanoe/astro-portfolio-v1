@@ -1,30 +1,17 @@
 ---
-import { createT } from '../lib/i18n';
-import { buildLocaleOptions } from '../lib/locale-options';
-import type { Locale } from '../lib/locales';
-import LanguageSelector from './LanguageSelector.astro';
 import MobileNavMenu from './react/MobileNavMenu';
 
-interface Props {
-  lang: Locale;
-}
-
-const { lang } = Astro.props;
-const t = await createT(lang);
-
 const navItems = [
-  { href: '#home', label: t('nav.home') },
-  { href: '#about', label: t('nav.about') },
-  { href: '#skills', label: t('nav.skills') },
-  { href: '#services', label: t('nav.services') },
-  { href: '#contact', label: t('nav.contact') },
+  { href: '#home', label: 'Home' },
+  { href: '#about', label: 'About' },
+  { href: '#skills', label: 'Expertise' },
+  { href: '#services', label: 'Services' },
+  { href: '#contact', label: 'Contact' },
 ];
 
-const menuLabel = t('nav.openMenu');
-const closeLabel = t('nav.closeMenu');
-
-const { pathname, hash } = Astro.url;
-const localeOptions = buildLocaleOptions({ lang, pathname, hash });
+const menuLabel = 'Open navigation menu';
+const closeLabel = 'Close navigation menu';
+const menuDescription = 'Choose a section to explore.';
 ---
 
 <header
@@ -47,17 +34,15 @@ const localeOptions = buildLocaleOptions({ lang, pathname, hash });
           </a>
         ))}
       </div>
-      <LanguageSelector lang={lang} locales={localeOptions} class="md:ml-6" />
     </nav>
 
     <div class="md:hidden">
       <MobileNavMenu
         client:idle
         navItems={navItems}
-        locales={localeOptions}
         menuLabel={menuLabel}
         closeLabel={closeLabel}
-        selectLabel={t('nav.languageSelected')}
+        description={menuDescription}
       />
     </div>
   </div>

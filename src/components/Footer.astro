@@ -1,13 +1,4 @@
 ---
-import { createT } from '../lib/i18n';
-import type { Locale } from '../lib/locales';
-
-interface Props {
-  lang: Locale;
-}
-
-const { lang } = Astro.props;
-const t = await createT(lang);
 const currentYear = new Date().getFullYear();
 ---
 
@@ -15,9 +6,8 @@ const currentYear = new Date().getFullYear();
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
       <div class="text-sm text-slate-400">
-        © {currentYear} Domi Adiwijaya. {t('footer.rights')}
+        © {currentYear} Domi Adiwijaya. All rights reserved.
       </div>
-      
     </div>
   </div>
 </footer>
