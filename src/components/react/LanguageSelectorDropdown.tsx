@@ -81,7 +81,10 @@ export function LanguageSelectorDropdown({
           >
             <span className="truncate">{locale.name}</span>
             {locale.active ? (
-              <span aria-hidden="true" className="text-xs font-semibold text-primary">
+               <span
+                aria-hidden="true"
+                className="hidden text-xs font-semibold text-primary lg:inline"
+              >
                 {selectLabel}
               </span>
             ) : null}
