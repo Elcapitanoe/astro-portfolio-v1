@@ -5,31 +5,29 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuLabel,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { type LocaleOption } from "@/lib/locale-options";
+import { cn } from "@/lib/utils";
 
-type LocaleOption = {
-  code: string;
-  name: string;
-  href: string;
-  active: boolean;
-};
-
-interface LanguageSwitcherDropdownProps {
+interface LanguageSelectorDropdownProps {
   locales: LocaleOption[];
   menuLabel: string;
   selectLabel: string;
   cookieName?: string;
   cookieMaxAge?: number;
+  triggerClassName?: string;
 }
 
-export function LanguageSwitcherDropdown({
+export function LanguageSelectorDropdown({
   locales,
   menuLabel,
   selectLabel,
   cookieName = "lang",
   cookieMaxAge = 60 * 60 * 24 * 365,
-}: LanguageSwitcherDropdownProps) {
+  triggerClassName,
+}: LanguageSelectorDropdownProps) {
   const labelId = useId();
 
   const handleSelect = useCallback(
@@ -49,12 +47,13 @@ export function LanguageSwitcherDropdown({
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
+          type="button"
           variant="subtle"
           aria-haspopup="listbox"
           aria-labelledby={labelId}
-          className="gap-2"
+          className={cn("gap-2", triggerClassName)}
         >
-          <span id={labelId} className="text-sm">
+          <span id={labelId} className="truncate text-sm font-medium">
             {activeLocale?.name ?? menuLabel}
           </span>
         </Button>
@@ -62,9 +61,12 @@ export function LanguageSwitcherDropdown({
       <DropdownMenuContent
         align="end"
         aria-label={menuLabel}
-        className="min-w-[12rem]"
+        className="min-w-[12rem] max-w-[calc(100vw-2rem)]"
         sideOffset={12}
       >
+        <DropdownMenuLabel className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+          {menuLabel}
+        </DropdownMenuLabel>
         {locales.map((locale) => (
           <DropdownMenuItem
             key={locale.code}
@@ -77,9 +79,9 @@ export function LanguageSwitcherDropdown({
             role="option"
             aria-selected={locale.active}
           >
-            <span>{locale.name}</span>
+            <span className="truncate">{locale.name}</span>
             {locale.active ? (
-              <span aria-hidden="true" className="text-xs text-primary">
+              <span aria-hidden="true" className="text-xs font-semibold text-primary">
                 {selectLabel}
               </span>
             ) : null}
@@ -90,4 +92,4 @@ export function LanguageSwitcherDropdown({
   );
 }
 
-export default LanguageSwitcherDropdown;
+export default LanguageSelectorDropdown;

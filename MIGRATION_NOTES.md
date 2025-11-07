@@ -20,7 +20,7 @@ npx playwright test  # run smoke tests
 ## React Islands
 - React components are co-located under `src/components/react`. They are imported from `.astro` files with explicit hydration directives (`client:idle`/`client:visible`).
 - Only interactive widgets use React:
-  - `LanguageSwitcherDropdown` and `MobileNavMenu` (Radix dropdown/dialog).
+  - `LanguageSelectorDropdown` and `MobileNavMenu` (Radix dropdown/dialog).
   - `SkillsTabs` (Radix tabs with Motion One animation) for mobile view.
   - `ContactActions` (Radix popover/toast/tooltip) replacing inline scripts.
 - Non-interactive sections remain pure Astro/HTML to keep almost-zero client JS.
