@@ -9,6 +9,3 @@ workers_dev = false
 directory = "./dist"
 binding = "ASSETS"
 run_worker_first = true
-
-[build]
-command = "npm run build"
