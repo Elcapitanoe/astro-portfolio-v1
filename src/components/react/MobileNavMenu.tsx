@@ -4,31 +4,41 @@ import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogClose,
 } from "@/components/ui/dialog";
+import LanguageSwitcherDropdown from "./LanguageSwitcherDropdown";
 
 type NavItem = {
   href: string;
   label: string;
 };
 
+type LocaleOption = {
+  code: string;
+  name: string;
+  href: string;
+  active: boolean;
+};
+
 interface MobileNavMenuProps {
   navItems: NavItem[];
+  locales: LocaleOption[];
   menuLabel: string;
   closeLabel: string;
-  description: string;
+  selectLabel: string;
 }
 
 export function MobileNavMenu({
   navItems,
+  locales,
   menuLabel,
   closeLabel,
-  description,
+  selectLabel,
 }: MobileNavMenuProps) {
   const [open, setOpen] = useState(false);
 
@@ -50,7 +60,7 @@ export function MobileNavMenu({
         <DialogHeader className="space-y-1">
           <DialogTitle className="text-lg font-semibold">{menuLabel}</DialogTitle>
           <DialogDescription className="text-sm text-muted-foreground">
-            {description}
+            {selectLabel}
           </DialogDescription>
         </DialogHeader>
         <nav aria-label={menuLabel} className="space-y-3">
@@ -65,6 +75,14 @@ export function MobileNavMenu({
             </a>
           ))}
         </nav>
+        <div className="space-y-2">
+          <p className="text-xs uppercase tracking-wide text-muted-foreground">{selectLabel}</p>
+          <LanguageSwitcherDropdown
+            locales={locales}
+            menuLabel={menuLabel}
+            selectLabel={selectLabel}
+          />
+        </div>
         <DialogClose asChild>
           <Button variant="ghost" className="mt-2 gap-2 text-sm text-muted-foreground">
             <X className="h-4 w-4" aria-hidden="true" />

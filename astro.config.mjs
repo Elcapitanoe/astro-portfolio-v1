@@ -12,8 +12,24 @@ export default defineConfig({
     tailwind(),
     react(),
     sitemap({
+      i18n: {
+        defaultLocale: "en",
+        locales: {
+          ar: "ar",
+          bn: "bn",
+          en: "en",
+          fr: "fr",
+          hi: "hi",
+          id: "id",
+          pt: "pt",
+          ru: "ru",
+          es: "es",
+          zh: "zh",
+        },
+      },
       filter: (page) => {
         const { pathname } = new URL(page);
+        if (pathname === "/") return false;
         if (pathname.includes("/draft")) return false;
         return true;
       },

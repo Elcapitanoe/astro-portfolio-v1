@@ -1,13 +1,13 @@
 ---
-const hero = {
-  alt: 'Domi Adiwijaya',
-  firstName: 'Domi',
-  lastName: 'Adiwijaya',
-  tagline: 'Systems & Homelab Engineer',
-  blurb:
-    'I design and deliver dependable systems. From homelab architectures to production-grade automation, I translate complex constraints into solutions that are both elegant and resilient.',
-  cta: 'Explore My Work',
-};
+import { createT } from '../lib/i18n';
+import type { Locale } from '../lib/locales';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const t = await createT(lang);
 ---
 
 <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
@@ -22,7 +22,7 @@ const hero = {
         <div class="relative">
           <img
             src="/domi.webp"
-            alt={hero.alt}
+            alt={t('hero.alt')}
             class="w-40 h-40 rounded-full border-4 border-slate-600 shadow-2xl"
             loading="eager"
             width="160"
@@ -34,18 +34,17 @@ const hero = {
 
       <div class="space-y-4">
         <h1 class="text-5xl md:text-7xl font-bold text-white">
-          {hero.firstName}{' '}
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">{hero.lastName}</span>
+          {t('hero.title.1')} <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">{t('hero.title.2')}</span>
         </h1>
-        <p class="text-xl md:text-2xl text-slate-300 font-light">{hero.tagline}</p>
+        <p class="text-xl md:text-2xl text-slate-300 font-light">{t('hero.tagline')}</p>
         <p class="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          {hero.blurb}
+          {t('hero.blurb')}
         </p>
       </div>
 
       <div class="pt-8">
         <a href="#about" class="inline-flex items-center space-x-2 text-slate-300 hover:text-white group">
-          <span>{hero.cta}</span>
+          <span>{t('hero.cta')}</span>
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>

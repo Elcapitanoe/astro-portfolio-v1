@@ -2,9 +2,7 @@
 .wrangler/
 .env
 .env.*
-.vscode/
 .DS_Store
 Thumbs.db
 dist/
 node_modules/
-tests/
