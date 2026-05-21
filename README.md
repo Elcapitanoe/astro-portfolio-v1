@@ -1,39 +1,51 @@
-# Personal Portfolio (Astro + Tailwind CSS)
+# Domi Portfolio
 
-A clean, fast, and minimal personal portfolio built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com). The goal is straightforward: showcase projects and profile info with solid performance and a simple authoring experience.
+A fast, minimalist personal portfolio built to showcase projects with exceptional performance and a seamless authoring experience.
+
+[View Live Site](https://hlengineer-port.domi.my.id)
 
 ## Tech Stack
-- Astro (content-first, file-based routing)
-- Tailwind CSS (utility-first styling)
-- Optional: TypeScript support if you prefer strict typing
 
-## Internationalization (i18n)
+- **Core**: [Astro](https://astro.build/), [React](https://react.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), [Framer Motion](https://www.framer.com/motion/)
+- **Quality**: TypeScript, [Playwright](https://playwright.dev/)
+- **Optimization**: Partytown, Astro Sitemap
 
-All translation resources live in `/src/i18n`.
+## Features
 
-If you notice any errors, awkward phrasing, or missing strings, I would appreciate your help:
-- Contact me via the email listed on my GitHub profile, or
-- Fork this repo and open a Pull Request, or
-- Open an Issue on the repository’s issue page
+- **High Performance**: Static Site Generation (SSG) with minimal client-side JavaScript.
+- **Global Reach (i18n)**: Native routing and support for 10 languages (EN, ID, ES, FR, ZH, AR, BN, HI, PT, RU).
+- **SEO Ready**: Automated sitemaps and optimized metadata.
+- **Accessible UI**: Built on top of unstyled, accessible Radix UI primitives.
 
-### Translation guidelines
-- Keep keys stable and meaningful. Avoid editing existing keys unless necessary.
-- Preserve interpolation placeholders
-- Maintain consistent punctuation and capitalization across languages.
-- Keep line breaks and spacing where they carry meaning.
+## Getting Started
+
+1. **Install dependencies**
+   ```sh
+   npm install
+   ```
+
+2. **Run development server**
+   ```sh
+   npm run dev
+   ```
+
+3. **Build for production**
+   ```sh
+   npm run build
+   ```
+
+## Internationalization
+
+Translations are managed in `/src/i18n`. Contributions to improve translations are welcome:
+- Preserve existing keys and interpolation placeholders.
+- Maintain consistent punctuation and spacing.
+- Open a Pull Request for any corrections.
 
 ## Deployment
 
-This site builds to static assets by default and works well on most hosts. Common options:
-- **Vercel**: zero-config for Astro
-- **Cloudflare**: deploy via Pages or Workers (depending on your setup)
+The project is pre-configured for platforms like Vercel, Netlify, and Cloudflare Pages. Simply link your repository or run `npm run build` and deploy the `dist/` directory.
 
-Run `npm run build`, then follow your platform’s upload/deploy instructions.
+## License
 
-## Contributing
-
-Issues and PRs are welcome. For translation fixes, see the i18n section above. For code changes:
-1. Fork the repository
-2. Create a feature branch
-3. Commit with clear messages
-4. Open a Pull Request with a concise description and rationale
+ISC License
