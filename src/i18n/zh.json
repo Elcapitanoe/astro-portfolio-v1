@@ -211,7 +211,7 @@
     "info": {
       "email": {
         "title": "邮箱",
-        "value": "hello@domiadi.com"
+        "value": "hello@domi.my.id"
       },
       "location": {
         "title": "位置",
@@ -225,7 +225,6 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn"
-
     },
     "actions": {
       "copyEmail": "复制邮箱",

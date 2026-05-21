@@ -1,6 +1,7 @@
 ---
 import { createT } from '../lib/i18n';
 import type { Locale } from '../lib/locales';
+import { Terminal, ChevronRight, Activity } from 'lucide-react';
 
 interface Props {
   lang: Locale;
@@ -10,46 +11,85 @@ const { lang } = Astro.props;
 const t = await createT(lang);
 ---
 
-<section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
-  <div class="absolute inset-0">
-    <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-  </div>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-    <div class="space-y-8">
-      <div class="flex justify-center">
-        <div class="relative">
-          <img
-            src="/domi.webp"
-            alt={t('hero.alt')}
-            class="w-40 h-40 rounded-full border-4 border-slate-600 shadow-2xl"
-            loading="eager"
-            width="160"
-            height="160"
-          />
-          <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20"></div>
-        </div>
+<section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 pb-16 md:pt-32 md:pb-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full grid lg:grid-cols-2 gap-12 items-center">
+    
+    <div class="space-y-8 animate-slide-up" style="animation-delay: 100ms;">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary border border-border text-xs font-mono text-primary font-medium">
+        <Activity size={14} className="animate-pulse" />
+        <span>System Status: Online</span>
       </div>
 
       <div class="space-y-4">
-        <h1 class="text-5xl md:text-7xl font-bold text-white">
-          {t('hero.title.1')} <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">{t('hero.title.2')}</span>
+        <h1 class="text-5xl md:text-7xl font-bold text-foreground tracking-tight leading-tight">
+          {t('hero.title.1')} <br class="hidden md:block"/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent font-mono">
+            {t('hero.title.2')}
+          </span>
         </h1>
-        <p class="text-xl md:text-2xl text-slate-300 font-light">{t('hero.tagline')}</p>
-        <p class="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-xl md:text-2xl text-muted-foreground font-light tracking-wide">{t('hero.tagline')}</p>
+        <p class="text-lg text-muted-foreground max-w-xl leading-relaxed">
           {t('hero.blurb')}
         </p>
       </div>
 
-      <div class="pt-8">
-        <a href="#about" class="inline-flex items-center space-x-2 text-slate-300 hover:text-white group">
+      <div class="pt-4 flex flex-wrap gap-4">
+        <a href="#about" class="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-md font-medium transition-colors">
           <span>{t('hero.cta')}</span>
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
+          <ChevronRight size={18} />
+        </a>
+        <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-border px-6 py-3 rounded-md font-medium transition-colors">
+          <Terminal size={18} />
+          <span>init_contact()</span>
         </a>
       </div>
     </div>
+
+    <!-- Terminal Window Decoration -->
+    <div class="animate-slide-up hidden lg:block" style="animation-delay: 300ms;">
+      <div class="rounded-lg border border-border bg-card overflow-hidden shadow-2xl relative">
+        <!-- Window Controls -->
+        <div class="flex items-center gap-2 px-4 py-3 border-b border-border bg-muted/50">
+          <div class="w-3 h-3 rounded-full bg-destructive/80"></div>
+          <div class="w-3 h-3 rounded-full bg-accent/80"></div>
+          <div class="w-3 h-3 rounded-full bg-primary/80"></div>
+          <div class="ml-2 flex-1 text-center font-mono text-xs text-muted-foreground">domi@homelab:~</div>
+        </div>
+        <!-- Terminal Body -->
+        <div class="p-6 font-mono text-sm space-y-4">
+          <div class="flex gap-4">
+            <span class="text-accent">➜</span>
+            <span class="text-primary">~</span>
+            <span class="text-foreground">whoami</span>
+          </div>
+          <div class="text-muted-foreground pl-4 border-l-2 border-border ml-2 space-y-2">
+            <p>Name: Domi Adiwijaya</p>
+            <p>Role: Tech & HomeLab Enthusiast</p>
+            <p>Focus: Infrastructure, Self-hosting, Automation</p>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-accent">➜</span>
+            <span class="text-primary">~</span>
+            <span class="text-foreground">neofetch</span>
+          </div>
+          <div class="flex gap-6 items-start pt-2">
+            <img src="/domi.webp" alt={t('hero.alt')} class="w-24 h-24 rounded border border-border filter grayscale hover:grayscale-0 transition-all duration-500" />
+            <div class="text-muted-foreground space-y-1">
+              <p><span class="text-primary">OS:</span> Linux / Cloud Native</p>
+              <p><span class="text-primary">Kernel:</span> DevSecOps</p>
+              <p><span class="text-primary">Uptime:</span> 24/7 Highly Available</p>
+              <p><span class="text-primary">Shell:</span> bash / zsh</p>
+              <p><span class="text-primary">Memory:</span> 128GB ECC</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-accent">➜</span>
+            <span class="text-primary">~</span>
+            <span class="inline-block w-2 h-4 bg-foreground animate-pulse"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>

@@ -211,7 +211,7 @@
     "info": {
       "email": {
         "title": "Correo",
-        "value": "hello@domiadi.com"
+        "value": "hello@domi.my.id"
       },
       "location": {
         "title": "Ubicación",
@@ -225,7 +225,6 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn"
-
     },
     "actions": {
       "copyEmail": "Copiar correo",

@@ -12,7 +12,7 @@
     "openMenu": "Открыть меню навигации",
     "closeMenu": "Закрыть меню навигации",
     "language": "Язык",
-    "languageSelected": "Выбрано"
+    "languageSelected": "Выбран"
   },
   "hero": {
     "alt": "Domi Adiwijaya",
@@ -211,7 +211,7 @@
     "info": {
       "email": {
         "title": "E-mail",
-        "value": "hello@domiadi.com"
+        "value": "hello@domi.my.id"
       },
       "location": {
         "title": "Локация",
@@ -225,7 +225,6 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn"
-
     },
     "actions": {
       "copyEmail": "Скопировать e-mail",

@@ -6,3 +6,8 @@
 Thumbs.db
 dist/
 node_modules/
+playwright-report/
+test-results/
+.vercel/
+.netlify/
+.vercel

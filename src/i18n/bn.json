@@ -211,7 +211,7 @@
     "info": {
       "email": {
         "title": "ই-মেল",
-        "value": "hello@domiadi.com"
+        "value": "hello@domi.my.id"
       },
       "location": {
         "title": "অবস্থান",
@@ -225,7 +225,6 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn"
-
     },
     "actions": {
       "copyEmail": "ইমেইল কপি করুন",

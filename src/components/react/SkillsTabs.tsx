@@ -81,11 +81,15 @@ function SkillProgress({ level }: { level: number }) {
     };
   }, [level, reduceMotion]);
 
+  // Determine color based on level to mimic resource usage (Green -> Amber -> Redish, but we'll stick to tech accents)
+  const isHigh = level >= 85;
+  const barColor = isHigh ? "bg-accent" : "bg-primary";
+
   return (
-    <div className="h-2 w-full overflow-hidden rounded-full bg-white/10">
+    <div className="h-1.5 w-full overflow-hidden rounded-sm bg-secondary border border-border">
       <div
         ref={barRef}
-        className="h-full rounded-full bg-gradient-to-r from-blue-500 to-purple-500 transition-[width] duration-300 ease-out"
+        className={cn("h-full transition-[width] duration-300 ease-out", barColor)}
       />
     </div>
   );
@@ -98,19 +102,16 @@ export function SkillsTabs({ categories, initialCategory }: SkillsTabsProps) {
   if (!items.length) return null;
 
   return (
-    <Card className="border-white/5 bg-slate-900/70">
-      <CardHeader>
-        <Tabs value={value} onValueChange={setValue}>
-          <TabsList className="flex flex-wrap justify-start gap-2 bg-transparent p-0">
+    <Card className="border-border bg-card shadow-none">
+      <CardHeader className="p-4 sm:p-6 pb-0">
+        <Tabs value={value} onValueChange={setValue} className="w-full">
+          <TabsList className="flex flex-wrap h-auto justify-start gap-2 bg-transparent p-0 mb-6">
             {items.map((category) => (
               <TabsTrigger
                 key={category.id}
                 value={category.id}
                 className={cn(
-                  "rounded-xl border border-transparent px-4 py-2 text-sm transition",
-                  value === category.id
-                    ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white"
-                    : "bg-white/5 text-slate-200 hover:bg-white/10",
+                  "rounded-md border border-border px-4 py-2 text-sm transition-all data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:border-primary hover:bg-secondary",
                 )}
               >
                 {category.title}
@@ -118,16 +119,16 @@ export function SkillsTabs({ categories, initialCategory }: SkillsTabsProps) {
             ))}
           </TabsList>
           {items.map((category) => (
-            <TabsContent key={category.id} value={category.id}>
-              <CardContent className="space-y-4">
+            <TabsContent key={category.id} value={category.id} className="mt-0">
+              <CardContent className="space-y-4 p-0">
                 {category.skills.map((skill) => (
-                  <div key={skill.id} className="space-y-2 rounded-xl bg-white/5 p-4">
+                  <div key={skill.id} className="space-y-2 rounded-md bg-secondary/30 border border-border/50 p-4 hover:border-primary/30 transition-colors">
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2 text-sm font-medium text-white">
+                      <div className="flex items-center gap-2 text-sm font-medium text-foreground">
                         <SkillIcon name={skill.icon} />
                         <span>{skill.name}</span>
                       </div>
-                      <span className="text-xs text-muted-foreground">{skill.level}%</span>
+                      <span className="text-xs font-mono text-muted-foreground">{skill.level}%</span>
                     </div>
                     <SkillProgress level={skill.level} />
                   </div>

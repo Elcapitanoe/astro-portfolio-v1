@@ -1,6 +1,7 @@
 ---
 import { createT } from '../lib/i18n';
 import type { Locale } from '../lib/locales';
+import { Terminal, Activity } from 'lucide-react';
 
 interface Props {
   lang: Locale;
@@ -11,11 +12,21 @@ const t = await createT(lang);
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-slate-900 border-t border-slate-800">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-      <div class="text-sm text-slate-400">
+<footer class="bg-background border-t border-border mt-auto">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3 text-muted-foreground">
+        <Terminal size={16} />
+        <span class="font-mono text-xs">domi@home-lab ~ # EOF</span>
+      </div>
+      
+      <div class="text-xs font-mono text-muted-foreground/70">
         © {currentYear} Domi Adiwijaya. {t('footer.rights')}
+      </div>
+
+      <div class="flex items-center gap-2 text-xs font-mono text-primary">
+        <Activity size={14} class="animate-pulse" />
+        <span>SYS.ONLINE</span>
       </div>
     </div>
   </div>

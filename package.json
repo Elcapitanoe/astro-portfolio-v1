@@ -1,11 +1,11 @@
 {
-  "name": "domiadi-portfolio",
+  "name": "domi-portfolio",
   "type": "module",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -16,11 +16,12 @@
     "@playwright/test": "^1.49.1",
     "astro": "^5.14.1",
     "autoprefixer": "^10.4.21",
+    "baseline-browser-mapping": "^2.10.31",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.18",
     "typescript": "^5.9.3"
   },
-  "description": "> <a href=\"https://domiadi.com\">domiadi.com</a>",
+  "description": "> <a href=\"https://domi.my.id\">domi.my.id</a>",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -34,8 +35,11 @@
   },
   "homepage": "https://github.com/Elcapitanoe/astro-portfolio-v1#readme",
   "dependencies": {
-    "@astrojs/partytown": "^2.1.4",
+    "@astrojs/partytown": "^2.1.7",
     "@astrojs/react": "^4.4.0",
+    "@builder.io/partytown": "^0.10.3",
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/jetbrains-mono": "^5.2.8",
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-dropdown-menu": "^2.1.2",
     "@radix-ui/react-popover": "^1.1.2",

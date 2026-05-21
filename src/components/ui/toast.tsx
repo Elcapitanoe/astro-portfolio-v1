@@ -39,7 +39,7 @@ const Toast = React.forwardRef<
     <ToastPrimitives.Root
       ref={toastRef}
       className={cn(
-        "relative grid w-full gap-3 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/90 p-4 text-sm text-foreground shadow-xl backdrop-blur",
+        "group pointer-events-auto relative flex w-full items-center justify-between space-x-2 overflow-hidden rounded-md border border-border bg-background p-4 pr-6 shadow-lg transition-all data-[swipe=cancel]:translate-x-0 data-[swipe=end]:translate-x-[var(--radix-toast-swipe-end-x)] data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[swipe=move]:transition-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[swipe=end]:animate-out data-[state=closed]:fade-out-80 data-[state=closed]:slide-out-to-right-full data-[state=open]:slide-in-from-top-full data-[state=open]:sm:slide-in-from-bottom-full",
         className,
       )}
       {...props}

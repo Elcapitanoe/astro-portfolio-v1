@@ -12,7 +12,7 @@
     "openMenu": "Ouvrir le menu de navigation",
     "closeMenu": "Fermer le menu de navigation",
     "language": "Langue",
-    "languageSelected": "Sélectionné"
+    "languageSelected": "Sélectionnée"
   },
   "hero": {
     "alt": "Domi Adiwijaya",
@@ -211,7 +211,7 @@
     "info": {
       "email": {
         "title": "E-mail",
-        "value": "hello@domiadi.com"
+        "value": "hello@domi.my.id"
       },
       "location": {
         "title": "Localisation",
@@ -225,7 +225,6 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn"
-
     },
     "actions": {
       "copyEmail": "Copier l’e-mail",

@@ -5,9 +5,11 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: "https://domiadi.com",
+  site: "https://domi.my.id",
   trailingSlash: "always",
-  viewTransitions: true,
+  redirects: {
+    "/": "/en/",
+  },
   integrations: [
     tailwind(),
     react(),

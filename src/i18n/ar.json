@@ -12,7 +12,7 @@
     "openMenu": "فتح قائمة التنقل",
     "closeMenu": "إغلاق قائمة التنقل",
     "language": "اللغة",
-    "languageSelected": "محدد"
+    "languageSelected": "محددة"
   },
   "hero": {
     "alt": "Domi Adiwijaya",
@@ -211,7 +211,7 @@
     "info": {
       "email": {
         "title": "البريد",
-        "value": "hello@domiadi.com"
+        "value": "hello@domi.my.id"
       },
       "location": {
         "title": "الموقع",
@@ -225,7 +225,6 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn"
-
     },
     "actions": {
       "copyEmail": "انسخ البريد الإلكتروني",

@@ -1,6 +1,13 @@
 ---
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/jetbrains-mono/400.css';
+import '@fontsource/jetbrains-mono/500.css';
 import '../styles/global.css';
 
+import { ClientRouter } from 'astro:transitions';
 import type { Locale } from '../lib/locales';
 import { SUPPORTED_LOCALES, DEFAULT_LOCALE, X_DEFAULT_URL } from '../lib/locales';
 
@@ -12,7 +19,7 @@ export interface Props {
 
 const {
   title,
-  description = "Explore Domi Adiwijaya's portfolio, tech insights, and innovative projects by a professional Tech & HomeLab Enthusiast.",
+  description = "Domi Adiwijaya's Portfolio - Homelab, Server Infrastructure, and Cloud-Native Engineering.",
   lang: _lang,
 } = Astro.props;
 
@@ -28,30 +35,31 @@ const mirrorPath = (target: string) => hasLangPrefix ? abs(path.replace(/^\/([a-
 ---
 
 <!DOCTYPE html>
-<html lang={lang} data-astro-transition-scope="layout">
+<html lang={lang} class="dark scroll-smooth">
   <head>
     <script is:inline src="https://www.googletagmanager.com/gtag/js?id=GTM-NGJ5QKLW" type="text/partytown"></script>
-<script is:inline type="text/partytown">
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function () {
-        dataLayer.push(arguments);
-    };
-  window.gtag('js', new Date());
-  window.gtag('config', 'GTM-NGJ5QKLW');
-</script>
+    <script is:inline type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+          dataLayer.push(arguments);
+      };
+      window.gtag('js', new Date());
+      window.gtag('config', 'GTM-NGJ5QKLW');
+    </script>
     <script type="text/javascript" is:inline>
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "tl7x9cf9fq");
-</script>
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "tl7x9cf9fq");
+    </script>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <meta name="author" content="Domi Adiwijaya" />
+    <meta name="theme-color" content="#09090b" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL.href} />
     <meta property="og:title" content={title} />
@@ -68,22 +76,23 @@ const mirrorPath = (target: string) => hasLangPrefix ? abs(path.replace(/^\/([a-
     ))}
     <link rel="alternate" hreflang="x-default" href={X_DEFAULT_URL ? abs(X_DEFAULT_URL) : mirrorPath(DEFAULT_LOCALE)} />
     <link rel="canonical" href={canonicalURL.href} />
+    <ClientRouter />
     <slot name="head" />
     <title>{title}</title>
-    <link rel="canonical" href="https://domiadi.com/" /> 
     <meta property="og:site_name" content="Domi Adiwijaya" /> 
-    <script type="application/ld+json"> 
-    { 
-      "@context": "https://schema.org", 
-      "@type": "WebSite", 
-      "name": "Domi Adiwijaya", 
-      "alternateName": ["Domi", "domiadi.com"], 
-      "url": "https://domiadi.com/"
-    } 
-    </script>
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Domi Adiwijaya",
+      "alternateName": ["Domi", "domi.my.id"],
+      "url": "https://domi.my.id/"
+    })} />
   </head>
-  <body class="min-h-screen bg-background text-foreground">
-    <div class="flex min-h-screen flex-col" transition:animate="fade">
+  <body class="min-h-screen bg-background text-foreground selection:bg-primary/30 selection:text-primary-foreground font-sans antialiased overflow-x-hidden">
+    <div class="flex min-h-screen flex-col relative" transition:animate="fade">
+      <!-- Minimal tech background pattern -->
+      <div class="fixed inset-0 z-[-1] bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      
       <slot />
     </div>
   </body>

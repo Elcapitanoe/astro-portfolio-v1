@@ -58,50 +58,52 @@ export function ContactActions({
 
   return (
     <TooltipProvider delayDuration={150}>
-      <div className="flex flex-col gap-3 sm:flex-row">
+      <div className="flex flex-col gap-3 sm:flex-row pt-4">
           <Tooltip>
             <TooltipTrigger asChild>
               <Button
                 id={buttonId}
                 variant="default"
-                className="w-full gap-2 sm:w-auto"
+                className="w-full gap-2 sm:w-auto font-mono text-xs tracking-wider"
                 onClick={copyToClipboard}
               >
                 <Mail className="h-4 w-4" aria-hidden="true" />
                 <span>{copyLabel}</span>
               </Button>
             </TooltipTrigger>
-            <TooltipContent>{email}</TooltipContent>
+            <TooltipContent className="font-mono text-xs border border-border bg-card">{email}</TooltipContent>
           </Tooltip>
 
           <Popover>
             <PopoverTrigger asChild>
-              <Button variant="outline" className="w-full gap-2 sm:w-auto">
+              <Button variant="outline" className="w-full gap-2 sm:w-auto font-mono text-xs tracking-wider">
                 <Send className="h-4 w-4" aria-hidden="true" />
                 <span>{sendLabel}</span>
               </Button>
             </PopoverTrigger>
-            <PopoverContent className="space-y-3 text-sm">
-              <h4 className="text-base font-semibold text-white">{popoverTitle}</h4>
-              <p className="text-muted-foreground">{popoverDescription}</p>
+            <PopoverContent className="space-y-4 text-sm border-border bg-card p-4 rounded-md shadow-lg">
+              <div className="space-y-1 border-b border-border/50 pb-3">
+                <h4 className="text-sm font-mono font-semibold text-foreground tracking-tight">{popoverTitle}</h4>
+                <p className="text-muted-foreground text-xs">{popoverDescription}</p>
+              </div>
               <a
                 href={mailtoHref}
                 className={cn(
-                  "inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 to-purple-500 px-4 py-2 text-sm font-medium text-white shadow",
+                  "inline-flex items-center w-full justify-center gap-2 rounded-md bg-secondary border border-border px-4 py-2 text-sm font-medium text-foreground shadow-sm transition-colors hover:bg-secondary/80",
                   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                 )}
               >
-                <Mail className="h-4 w-4" aria-hidden="true" />
-                <span>{email}</span>
+                <Mail className="h-4 w-4 text-primary" aria-hidden="true" />
+                <span className="font-mono text-xs">{email}</span>
               </a>
             </PopoverContent>
           </Popover>
       </div>
       <Toaster duration={3500} swipeDirection="right">
-        <Toast key={toastKey} open={toastOpen} onOpenChange={setToastOpen}>
-          <ToastTitle>{toastTitleRef.current}</ToastTitle>
-          <ToastDescription>{toastDescriptionRef.current}</ToastDescription>
-          <ToastClose />
+        <Toast key={toastKey} open={toastOpen} onOpenChange={setToastOpen} className="border-border bg-card text-foreground font-mono">
+          <ToastTitle className="text-sm text-primary">{toastTitleRef.current}</ToastTitle>
+          <ToastDescription className="text-xs text-muted-foreground">{toastDescriptionRef.current}</ToastDescription>
+          <ToastClose className="text-muted-foreground hover:text-foreground" />
         </Toast>
       </Toaster>
     </TooltipProvider>

@@ -1,4 +1,5 @@
 import { useCallback, useId } from "react";
+import { navigate } from "astro:transitions/client";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -37,7 +38,7 @@ export function LanguageSwitcherDropdown({
       if (typeof document === "undefined") return;
       document.cookie = `${cookieName}=${option.code}; path=/; max-age=${cookieMaxAge}; SameSite=Lax`;
       if (option.href) {
-        window.location.assign(option.href);
+        navigate(option.href);
       }
     },
     [cookieMaxAge, cookieName],
@@ -49,12 +50,12 @@ export function LanguageSwitcherDropdown({
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          variant="subtle"
+          variant="outline"
           aria-haspopup="listbox"
           aria-labelledby={labelId}
-          className="gap-2"
+          className="gap-2 font-mono h-9"
         >
-          <span id={labelId} className="text-sm">
+          <span id={labelId} className="text-xs font-semibold tracking-wider">
             {activeLocale?.name ?? menuLabel}
           </span>
         </Button>
@@ -62,13 +63,13 @@ export function LanguageSwitcherDropdown({
       <DropdownMenuContent
         align="end"
         aria-label={menuLabel}
-        className="min-w-[12rem]"
-        sideOffset={12}
+        className="min-w-[10rem] font-mono border-border bg-card rounded-md shadow-sm"
+        sideOffset={8}
       >
         {locales.map((locale) => (
           <DropdownMenuItem
             key={locale.code}
-            className="justify-between"
+            className="justify-between hover:bg-secondary rounded-sm px-3 py-2 text-xs"
             data-active={locale.active}
             onSelect={(event) => {
               event.preventDefault();
@@ -77,9 +78,9 @@ export function LanguageSwitcherDropdown({
             role="option"
             aria-selected={locale.active}
           >
-            <span>{locale.name}</span>
+            <span className="font-medium tracking-tight text-foreground">{locale.name}</span>
             {locale.active ? (
-              <span aria-hidden="true" className="text-xs text-primary">
+              <span aria-hidden="true" className="text-[10px] text-primary uppercase tracking-wider">
                 {selectLabel}
               </span>
             ) : null}

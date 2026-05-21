@@ -2,36 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: dark;
-  --background: 222 47% 7%;
-  --foreground: 213 31% 91%;
-  --muted: 222 35% 14%;
-  --muted-foreground: 215 20% 70%;
-  --popover: 222 47% 9%;
-  --popover-foreground: 213 31% 91%;
-  --card: 222 47% 9%;
-  --card-foreground: 213 31% 91%;
-  --border: 215 27% 26%;
-  --input: 215 27% 26%;
-  --primary: 224 76% 55%;
-  --primary-foreground: 210 40% 98%;
-  --secondary: 262 83% 64%;
-  --secondary-foreground: 210 40% 96%;
-  --accent: 198 93% 60%;
-  --accent-foreground: 210 40% 98%;
-  --destructive: 358 75% 59%;
-  --destructive-foreground: 210 40% 98%;
-  --ring: 223 76% 60%;
-  --radius: 0.75rem;
+@layer base {
+  :root {
+    --background: 240 10% 4%; /* Zinc 950 essentially */
+    --foreground: 0 0% 98%;
+    
+    --card: 240 10% 6%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 240 10% 6%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 217 91% 60%; /* Cyber Blue */
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 240 4% 16%; /* Zinc 800 */
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 240 5% 15%; /* Zinc 800 */
+    --muted-foreground: 240 5% 65%; /* Zinc 400 */
+    
+    --accent: 142 71% 45%; /* Terminal Green */
+    --accent-foreground: 210 40% 98%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 6% 15%; /* Zinc 800 */
+    --input: 240 6% 15%;
+    --ring: 217 91% 60%;
+    
+    /* Reduced radius for a sharper, more technical feel */
+    --radius: 0.3rem;
+  }
 }
 
-* {
-  @apply border-border;
-}
-
-body {
-  @apply bg-background text-foreground antialiased;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary-foreground;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -45,7 +57,20 @@ body {
   }
 }
 
-[data-astro-transition-scope]::view-transition-old(root),
-[data-astro-transition-scope]::view-transition-new(root) {
-  animation: none;
+::view-transition-old(root) {
+  animation: vt-fade-out 150ms ease-out both;
+}
+
+::view-transition-new(root) {
+  animation: vt-fade-in 150ms ease-in both;
+}
+
+@keyframes vt-fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes vt-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
