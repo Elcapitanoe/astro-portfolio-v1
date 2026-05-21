@@ -8,7 +8,7 @@ A fast, minimalist personal portfolio built to showcase projects with exceptiona
 
 - **Core**: [Astro](https://astro.build/), [React](https://react.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), [Framer Motion](https://www.framer.com/motion/)
-- **Quality**: TypeScript, [Playwright](https://playwright.dev/)
+- **Quality**: [TypeScript](https://www.typescriptlang.org/), [Playwright](https://playwright.dev/)
 - **Optimization**: Partytown, Astro Sitemap
 
 ## Features
@@ -45,7 +45,3 @@ Translations are managed in `/src/i18n`. Contributions to improve translations a
 ## Deployment
 
 The project is pre-configured for platforms like Vercel, Netlify, and Cloudflare Pages. Simply link your repository or run `npm run build` and deploy the `dist/` directory.
-
-## License
-
-ISC License
