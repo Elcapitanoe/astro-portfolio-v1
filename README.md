@@ -1,4 +1,4 @@
-# Domi Portfolio
+# HomeLAB Engineer Portfolio
 
 A fast, minimalist personal portfolio built to showcase projects with exceptional performance and a seamless authoring experience.
 
